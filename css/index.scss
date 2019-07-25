@@ -7,6 +7,15 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
 @import "nojs-menus.scss";
 
+html,
+body {
+  //background: rgba(188, 224, 253, 0.5);
+  min-width: 1366px;
+}
+#__next {
+  width: 1200px;
+  margin: 0 auto;
+}
 .lead {
   font-size: 1.4em;
 }
@@ -23,11 +32,8 @@ pre {
 .navbar .btn,
 .navbar .dropdown-item,
 .navbar button {
-  font-size: 18px;
-}
-
-.navbar {
-  border-bottom: 1px solid #ddd;
+  font-size: 15px;
+  background: rgba(188, 224, 253, 0.5);
 }
 
 @media (max-width: 768px) {
@@ -86,4 +92,3 @@ pre {
   background: #fff;
   color: #000;
 }
-

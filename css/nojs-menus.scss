@@ -17,6 +17,7 @@
 }
 .nojs-dropdown .dropdown-toggle {
   cursor: pointer;
+  float: left;
 }
 .nojs-dropdown .dropdown-menu {
   position: absolute !important;
@@ -80,7 +81,7 @@
   }
 
   &:after {
-    transform: rotate(405deg) translateY(-5px) translateX(-6px); 
+    transform: rotate(405deg) translateY(-5px) translateX(-6px);
     transition: transform 0.5s ease-in-out;
   }
 }
@@ -97,14 +98,14 @@
   }
   .nojs-navbar-label {
     $width: 28px;
-  
+
     display: inline-block;
     outline: 0;
     cursor: pointer;
     border-bottom: 3px solid currentColor;
     width: $width;
     transition: border-bottom 1s ease-in-out;
-    
+
     &::-moz-focus-inner {
       border: 0;
       padding: 0;
