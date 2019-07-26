@@ -24,7 +24,7 @@ export default class extends Page {
             </h1>
 
             <p className="lead mb-5" style={{ fontSize: 35 }}>
-              A SIXWEEKS 에서 다양한 암호화폐 거래해 보세요
+              A SIXWEEKS 에서 다양한 암호화폐 거래해 보세요ㄴㅇㄴㅇ
             </p>
             <p className="text-right">
               <a
@@ -57,7 +57,7 @@ export default class extends Page {
           </Container>
         </Jumbotron>
         <Container>
-          <h2 className="text-center display-4 mt-2 mb-5">Getting Started</h2>
+          <h2 className="text-center display-4 mt-2 mb-5">게팅 Started</h2>
           <p>
             <a href="https://github.com/zeit/next.js">Next.js</a> from{" "}
             <a href="https://zeit.co">Zeit</a> makes creating websites with React easy.
