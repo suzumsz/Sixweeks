@@ -78,7 +78,9 @@ export default class extends React.Component {
         <Navbar light className="navbar navbar-expand-md pt-3 pb-3">
           <Link prefetch href="/">
             <NavbarBrand href="/">
-              <span className="icon ion-md-home mr-1" /> {Package.name}
+              <span className="logo">
+                <img src="../img/logo.png" />
+              </span>
             </NavbarBrand>
           </Link>
           <input
@@ -292,12 +294,12 @@ export class UserMenu extends React.Component {
              * so that users without JavaScript are also redirected to the page
              * they were on before they signed in.
              **/}
-            <a
-              href="/auth?redirect=/"
-              className="btn btn-outline-primary"
-              onClick={this.props.toggleModal}
-            >
-              <span className="icon ion-md-log-in mr-1" /> Sign up / Sign in
+            <span className="bar">|</span>
+            <a href="/auth?redirect=/" className="board_1" onClick={this.props.toggleModal}>
+              <span className="board"> BOARD</span>
+            </a>
+            <a href="/auth?redirect=/" className="login_1" onClick={this.props.toggleModal}>
+              <span className="login" /> LOGIN
             </a>
           </NavItem>
         </Nav>
