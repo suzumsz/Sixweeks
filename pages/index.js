@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
+import Login from "./login";
 
 export default class extends Page {
   render() {

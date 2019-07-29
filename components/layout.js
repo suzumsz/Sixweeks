@@ -140,29 +140,7 @@ export default class extends React.Component {
         >
           {this.props.children}
         </MainBody>
-        <Container fluid={this.props.fluid}>
-          <hr className="mt-3" />
-          <p className="text-muted small">
-            <Link href="https://github.com/iaincollins/nextjs-starter">
-              <a className="text-muted font-weight-bold">
-                <span className="icon ion-logo-github" /> {Package.name} {Package.version}
-              </a>
-            </Link>
-            <span> built with </span>
-            <Link href="https://github.com/zeit/next.js">
-              <a className="text-muted font-weight-bold">
-                Next.js {Package.dependencies.next.replace("^", "")}
-              </a>
-            </Link>
-            <span> &amp; </span>
-            <Link href="https://github.com/facebook/react">
-              <a className="text-muted font-weight-bold">
-                React {Package.dependencies.react.replace("^", "")}
-              </a>
-            </Link>
-            .<span className="ml-2">&copy; {new Date().getYear() + 1900}.</span>
-          </p>
-        </Container>
+
         <SigninModal
           modal={this.state.modal}
           toggleModal={this.toggleModal}
@@ -351,10 +329,60 @@ export class SigninModal extends React.Component {
     if (this.props.providers === null) return null;
 
     return (
-      <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{ maxWidth: 700 }}>
-        <ModalHeader>Sign up / Sign in</ModalHeader>
-        <ModalBody style={{ padding: "1em 2em" }}>
-          <Signin session={this.props.session} providers={this.props.providers} />
+      <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{ maxWidth: 773 }}>
+        <ModalBody className="ModalBody">
+          <h1 className="MB-h1">SIXWEEKS</h1>
+          <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
+          <p className="site">https://www.SIXWEEKS.com</p>
+          <form>
+            <div className="inputLogin">
+              <div className="col-md-1">
+                <label className="MB-email" for="inputEmail4">
+                  Email
+                  <input
+                    type="email"
+                    className="form-control-e"
+                    id="inputEmail4"
+                    placeholder="이메일"
+                  />
+                </label>
+              </div>
+              <div className="col-md-2">
+                <label for="inputPassword">
+                  Password
+                  <input
+                    type="password"
+                    className="form-control-pw"
+                    id="inputPassword4"
+                    placeholder="Password"
+                  />
+                </label>
+              </div>
+            </div>
+            <div className="form-group">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck" />
+                <label className="form-check-label" for="gridCheck">
+                  비밀번호저장
+                </label>
+              </div>
+            </div>
+            <label className="findid">아이디/비밀번호 찾기</label>
+            <button type="submit" class="btn-primary4">
+              Login
+            </button>
+            <button type="submit" class="btn-primary4">
+              Sign up
+            </button>
+            <button type="button" class="naver-btn">
+              <img src="../image/naver-img.png" />
+              NAVER 로그인
+            </button>
+            <button type="button" class="google-btn">
+              <img src="../image/google-img.png" />
+              GOOGLE 로그인
+            </button>
+          </form>
         </ModalBody>
       </Modal>
     );

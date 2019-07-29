@@ -19,7 +19,8 @@ body {
 .lead {
   font-size: 1.4em;
 }
-
+.main_footer {
+}
 pre {
   background-color: #333;
   border-color: #333;
@@ -61,6 +62,66 @@ pre {
   }
 }
 
+.ModalBody * {
+  margin: 0 auto;
+  text-align: center;
+}
+.ModalBody .MB-h1 {
+  font-family: "AppleSDGothicNeoSB00";
+  font-size: 50px;
+  margin-top: 20px;
+}
+.inputLogin {
+  float: left;
+}
+.col-md-1 {
+  display: inline;
+  margin: 40px;
+}
+.col-md-2 {
+  display: inline;
+  margin: 40px;
+}
+.form-control-e {
+  width: 450px;
+  height: 40px;
+}
+.form-control-pw {
+  width: 450px;
+  height: 40px;
+}
+
+.site {
+  margin: 10px;
+  border: 1px solid black;
+}
+.form-check {
+  float: left;
+}
+.findid {
+}
+.btn-primary4 {
+  margin: 2em;
+  width: 193px;
+  height: 50px;
+}
+.btn-primary2 {
+  margin: 2em;
+  width: 193px;
+  height: 50px;
+}
+.naver-btn {
+  display: block;
+  margin-top: 20px;
+  margin-left: 145px;
+  width: 450px;
+  height: 50px;
+}
+.google-btn {
+  margin: 2em;
+  width: 450px;
+  height: 50px;
+}
 /**
  * This is a fix for Reactstrap 5.0.0-alpha.4 not displaying menus in the 
  * navbar correcrtly on mobile devices.
