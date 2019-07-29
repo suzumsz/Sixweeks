@@ -10,8 +10,83 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 html,
 body {
   //background: rgba(188, 224, 253, 0.5);
-  min-width: 1366px;
+  min-width: 1024px;
 }
+.board {
+  margin-right: 20px;
+}
+.bar {
+  margin-right: 20px;
+}
+.lead mb-5 {
+  text-align: center;
+}
+.footer {
+  width: 1366px;
+  height: 421px;
+  background-color: #bcbcbc;
+  margin-top: 480px;
+  margin-left: -90px;
+}
+.about_sixweeks {
+  margin-left: 230px;
+}
+.about_icon {
+  width: 114px;
+  height: 120px;
+  border: solid 1px #bcbcbc;
+  float: left;
+  margin-right: 80px;
+  margin-top: 50px;
+}
+.sixweeks_story {
+  margin-top: 50px;
+  margin-left: 110px;
+}
+.sixweeks_s {
+  width: 260px;
+  height: 187px;
+  border: solid 1px #bcbcbc;
+  float: left;
+  margin-right: 88.6px;
+}
+.coin {
+  width: 972px;
+  height: 743px;
+  border: solid 1px #bcbcbc;
+  margin-top: 200px;
+  margin-left: 123px;
+  background-color: red;
+}
+
+.squ-box {
+  margin-left: 100px;
+  position: absolute;
+  z-index: 10;
+  bottom: -100px;
+}
+.sq-box {
+  width: 300px;
+  height: 200px;
+  border: solid 1px #bcbcbc;
+  background-color: #ffffff;
+  float: left;
+  margin-right: 28px;
+}
+.display-2 {
+  margin-top: -200px;
+  text-align: center;
+}
+.display-6 {
+  text-align: center;
+  margin-bottom: 200px;
+}
+
+.text-right {
+  margin-right: 480px;
+  margin-top: -150px;
+}
+
 #__next {
   width: 1200px;
   margin: 0 auto;

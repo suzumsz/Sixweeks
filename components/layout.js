@@ -78,7 +78,9 @@ export default class extends React.Component {
         <Navbar light className="navbar navbar-expand-md pt-3 pb-3">
           <Link prefetch href="/">
             <NavbarBrand href="/">
-              <span className="icon ion-md-home mr-1" /> {Package.name}
+              <span className="logo">
+                <img src="../img/logo.png" />
+              </span>
             </NavbarBrand>
           </Link>
           <input
@@ -140,29 +142,7 @@ export default class extends React.Component {
         >
           {this.props.children}
         </MainBody>
-        <Container fluid={this.props.fluid}>
-          <hr className="mt-3" />
-          <p className="text-muted small">
-            <Link href="https://github.com/iaincollins/nextjs-starter">
-              <a className="text-muted font-weight-bold">
-                <span className="icon ion-logo-github" /> {Package.name} {Package.version}
-              </a>
-            </Link>
-            <span> built with </span>
-            <Link href="https://github.com/zeit/next.js">
-              <a className="text-muted font-weight-bold">
-                Next.js {Package.dependencies.next.replace("^", "")}
-              </a>
-            </Link>
-            <span> &amp; </span>
-            <Link href="https://github.com/facebook/react">
-              <a className="text-muted font-weight-bold">
-                React {Package.dependencies.react.replace("^", "")}
-              </a>
-            </Link>
-            .<span className="ml-2">&copy; {new Date().getYear() + 1900}.</span>
-          </p>
-        </Container>
+
         <SigninModal
           modal={this.state.modal}
           toggleModal={this.toggleModal}
@@ -314,12 +294,12 @@ export class UserMenu extends React.Component {
              * so that users without JavaScript are also redirected to the page
              * they were on before they signed in.
              **/}
-            <a
-              href="/auth?redirect=/"
-              className="btn btn-outline-primary"
-              onClick={this.props.toggleModal}
-            >
-              <span className="icon ion-md-log-in mr-1" /> Sign up / Sign in
+            <span className="bar">|</span>
+            <a href="/auth?redirect=/" className="board_1" onClick={this.props.toggleModal}>
+              <span className="board"> BOARD</span>
+            </a>
+            <a href="/auth?redirect=/" className="login_1" onClick={this.props.toggleModal}>
+              <span className="login" /> LOGIN
             </a>
           </NavItem>
         </Nav>
