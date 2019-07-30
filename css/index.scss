@@ -7,11 +7,25 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
 @import "nojs-menus.scss";
 
-<<<<<<< HEAD
 html,
 body {
   //background: rgba(188, 224, 253, 0.5);
   min-width: 1024px;
+}
+
+.text_box {
+  width: 770px;
+  height: 40px;
+  margin: 0 auto;
+}
+.board_box {
+  width: 950px;
+  height: 695px;
+  border: solid 1px #bcbcbc;
+}
+.write {
+  border-bottom: solid 2.5px #0d4f9b;
+  width: 65px;
 }
 .board {
   margin-right: 20px;
@@ -91,152 +105,156 @@ body {
 #__next {
   width: 1200px;
   margin: 0 auto;
+<<<<<<< HEAD
 =======
-.display-2 {
-  margin-top: -200px;
-  margin-left: 310px;
->>>>>>> 635d5f5dea09a890d3174060744faf6b910f6556
 }
+>>>>>>> db94783189891a04295973b2321fa0b61b2f468a
 
-.lead {
-  font-size: 1.4em;
-  padding-left: 50px;
-}
-.main_footer {
-}
-pre {
-  background-color: #333;
-  border-color: #333;
-  color: #eee;
-  padding: 10px 20px;
-  border-radius: 5px;
-}
-
-.navbar,
-.navbar .btn,
-.navbar .dropdown-item,
-.navbar button {
-  font-size: 15px;
-  background: rgba(188, 224, 253, 0.5);
-}
-.navbar {
-  padding-left: 150px;
-  padding-right: 150px;
-}
-
-@media (max-width: 768px) {
   .display-2 {
-    font-size: 3em;
+    margin-top: -200px;
+    margin-left: 310px;
   }
-  .display-3 {
-    font-size: 2.5em;
-  }
-  .display-4 {
-    font-size: 2em;
-  }
-}
 
-.icon-spin {
-  display: inline-block;
-  animation: spin 1s infinite linear;
-}
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
+  .lead {
+    font-size: 1.4em;
+    padding-left: 50px;
   }
-  100% {
-    transform: rotate(359deg);
+  .main_footer {
   }
-}
+  pre {
+    background-color: #333;
+    border-color: #333;
+    color: #eee;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
 
-.ModalBody * {
-  margin: 0 auto;
-  text-align: center;
-}
-.ModalBody .MB-h1 {
-  font-family: "AppleSDGothicNeoSB00";
-  font-size: 50px;
-  margin-top: 20px;
-}
-.inputLogin {
-  float: left;
-}
-.col-md-1 {
-  display: inline;
-  margin: 40px;
-}
-.col-md-2 {
-  display: inline;
-  margin: 40px;
-}
-.form-control-e {
-  width: 450px;
-  height: 40px;
-}
-.form-control-pw {
-  width: 450px;
-  height: 40px;
-}
+  .navbar,
+  .navbar .btn,
+  .navbar .dropdown-item,
+  .navbar button {
+    font-size: 15px;
+    background: rgba(188, 224, 253, 0.5);
+  }
+  .navbar {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
 
-.site {
-  margin: 10px;
-  border: 1px solid black;
-}
-.form-check {
-  float: left;
-}
-.findid {
-}
-.btn-primary4 {
-  margin: 2em;
-  width: 193px;
-  height: 50px;
-}
-.btn-primary2 {
-  margin: 2em;
-  width: 193px;
-  height: 50px;
-}
-.naver-btn {
-  display: block;
-  margin-top: 20px;
-  margin-left: 145px;
-  width: 450px;
-  height: 50px;
-}
-.google-btn {
-  margin: 2em;
-  width: 450px;
-  height: 50px;
-}
-/**
+  @media (max-width: 768px) {
+    .display-2 {
+      font-size: 3em;
+    }
+    .display-3 {
+      font-size: 2.5em;
+    }
+    .display-4 {
+      font-size: 2em;
+    }
+  }
+
+  .icon-spin {
+    display: inline-block;
+    animation: spin 1s infinite linear;
+  }
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }
+
+  .ModalBody * {
+    margin: 0 auto;
+    text-align: center;
+  }
+  .ModalBody .MB-h1 {
+    font-family: "AppleSDGothicNeoSB00";
+    font-size: 50px;
+    margin-top: 20px;
+  }
+  .inputLogin {
+    float: left;
+  }
+  .col-md-1 {
+    display: inline;
+    margin: 40px;
+  }
+  .col-md-2 {
+    display: inline;
+    margin: 40px;
+  }
+  .form-control-e {
+    width: 450px;
+    height: 40px;
+  }
+  .form-control-pw {
+    width: 450px;
+    height: 40px;
+  }
+
+  .site {
+    margin: 10px;
+    border: 1px solid black;
+  }
+  .form-check {
+    float: left;
+  }
+  .findid {
+  }
+  .btn-primary4 {
+    margin: 2em;
+    width: 193px;
+    height: 50px;
+  }
+  .btn-primary2 {
+    margin: 2em;
+    width: 193px;
+    height: 50px;
+  }
+  .naver-btn {
+    display: block;
+    margin-top: 20px;
+    margin-left: 145px;
+    width: 450px;
+    height: 50px;
+  }
+  .google-btn {
+    margin: 2em;
+    width: 450px;
+    height: 50px;
+  }
+  /**
  * This is a fix for Reactstrap 5.0.0-alpha.4 not displaying menus in the 
  * navbar correcrtly on mobile devices.
  **/
-.navbar .dropdown {
-  display: block;
-}
-
-@media (max-width: 768px) {
-  .navbar .dropdown-menu {
-    position: relative !important;
-    display: block !important;
-    transform: none !important;
-    padding: 0 0 10px 0;
-    border: none;
+  .navbar .dropdown {
+    display: block;
   }
-}
 
-/**
+  @media (max-width: 768px) {
+    .navbar .dropdown-menu {
+      position: relative !important;
+      display: block !important;
+      transform: none !important;
+      padding: 0 0 10px 0;
+      border: none;
+    }
+  }
+
+  /**
  * Fix for Reactstrap
  **/
-.react-bs-table-sizePerPage-dropdown .dropdown-item a {
-  display: block;
-  color: #000;
-  text-decoration: none;
-}
+  .react-bs-table-sizePerPage-dropdown .dropdown-item a {
+    display: block;
+    color: #000;
+    text-decoration: none;
+  }
 
-.react-bs-table-sizePerPage-dropdown button {
-  background: #fff;
-  color: #000;
+  .react-bs-table-sizePerPage-dropdown button {
+    background: #fff;
+    color: #000;
+  }
 }
