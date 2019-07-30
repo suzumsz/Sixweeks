@@ -3,11 +3,9 @@ import React from "react";
 import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
-<<<<<<< HEAD
+
 import Login from "./login";
-=======
 import { relative } from "path";
->>>>>>> a0c773f43c9e071442dc8ad22b296355a1181e35
 
 export default class extends Page {
   render() {
