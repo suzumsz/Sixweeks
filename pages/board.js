@@ -30,7 +30,7 @@ class Board extends React.Component {
               <th scope="row">2</th>
               <td>
                 <img src="../img/그룹55.png" />
-                이더리움에 거래 했는데 지금 실시간 시세가 떨어지...
+                이더리움에 거래 했는데 지금 실시간 시세가 떨어지......
               </td>
               <td>강**</td>
               <td>2019.07.10</td>
