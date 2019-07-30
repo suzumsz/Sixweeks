@@ -3,6 +3,15 @@ import React from "react";
 import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+=======
+
+import Login from "./login";
+import { relative } from "path";
+>>>>>>> db94783189891a04295973b2321fa0b61b2f468a
+>>>>>>> c2eb979b7f5de00359bead1484a2276512a1c80b
 
 export default class extends Page {
   render() {
@@ -30,7 +39,14 @@ export default class extends Page {
                 <br className="v-block d-sm-none" />A SIXWEEKS 에서 다양한 암호화폐 거래해 보세요
               </span>
             </h1>
+<<<<<<< HEAD
 
+=======
+<<<<<<< HEAD
+=======
+
+>>>>>>> db94783189891a04295973b2321fa0b61b2f468a
+>>>>>>> c2eb979b7f5de00359bead1484a2276512a1c80b
             <p className="text-right">
               <a
                 href="https://github.com/iaincollins/nextjs-starter"
