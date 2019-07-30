@@ -374,7 +374,7 @@ export class SigninModal extends React.Component {
               Login
             </button>
             <button type="submit" class="btn-primary4">
-              Sign up
+              <a href="../signup">Sign up</a>
             </button>
             <button type="button" class="naver-btn">
               <img src="../image/naver-img.png" />
