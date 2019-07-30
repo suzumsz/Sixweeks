@@ -2,6 +2,10 @@ import React from "react";
 import Router from "next/router";
 import Head from "next/head";
 import Link from "next/link";
+import Signup from "../pages/signup";
+import Opinion from "../pages/opinion";
+import Board from "../pages/board";
+
 import {
   Container,
   Row,
@@ -295,7 +299,7 @@ export class UserMenu extends React.Component {
              * they were on before they signed in.
              **/}
             <span className="bar">|</span>
-            <a href="/auth?redirect=/" className="board_1" onClick={this.props.toggleModal}>
+            <a href="../board" className="board_1">
               <span className="board"> BOARD</span>
             </a>
             <a href="/auth?redirect=/" className="login_1" onClick={this.props.toggleModal}>
