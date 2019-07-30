@@ -24,7 +24,7 @@ class Board extends React.Component {
               <th scope="row">1</th>
               <td>비트코인 변동률 시간별로 볼 수 있나요?</td>
               <td>김** </td>
-              <td>5시간 전</td>
+              <td>45시간 전</td>
             </tr>
             <tr>
               <th scope="row">2</th>
