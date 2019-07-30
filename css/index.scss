@@ -6,6 +6,7 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
 @import "nojs-menus.scss";
+@import "board.scss";
 
 html,
 body {
@@ -105,10 +106,6 @@ body {
 #__next {
   width: 1200px;
   margin: 0 auto;
-<<<<<<< HEAD
-=======
-}
->>>>>>> db94783189891a04295973b2321fa0b61b2f468a
 
   .display-2 {
     margin-top: -200px;
