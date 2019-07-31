@@ -83,7 +83,7 @@ export default class extends React.Component {
           <Link prefetch href="/">
             <NavbarBrand href="/">
               <span className="logo">
-                <img src="../img/logo.png" />
+                <img src="static/img/logo.png" />
               </span>
             </NavbarBrand>
           </Link>
