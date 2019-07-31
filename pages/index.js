@@ -4,6 +4,8 @@ import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from
 import Page from "../components/page";
 import Layout from "../components/layout";
 
+import { relative } from "path";
+
 export default class extends Page {
   render() {
     return (
@@ -30,6 +32,7 @@ export default class extends Page {
                 <br className="v-block d-sm-none" />A SIXWEEKS 에서 다양한 암호화폐 거래해 보세요
               </span>
             </h1>
+
             <p className="text-right">
               <a
                 href="https://github.com/iaincollins/nextjs-starter"

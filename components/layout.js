@@ -299,7 +299,7 @@ export class UserMenu extends React.Component {
              * they were on before they signed in.
              **/}
             <span className="bar">|</span>
-            <a href="../board" className="board_1">
+            <a href="../newboard" className="board_1">
               <span className="board"> BOARD</span>
             </a>
             <a href="/auth?redirect=/" className="login_1" onClick={this.props.toggleModal}>
