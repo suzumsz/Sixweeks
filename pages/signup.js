@@ -3,12 +3,8 @@ import Layout from "../components/layout";
 
 class Signup extends React.Component {
   render() {
-<<<<<<< HEAD
-    return <Layout />;
-=======
     return (
       <Layout>
-<<<<<<< HEAD
         <h1>SIXWEEKS</h1>
         <p>회원가입하는 사이트의 주소가 아래와 같은지 확인하세요</p>
         <p className="site">https://www.SIXWEEKS.com</p>
@@ -136,12 +132,8 @@ class Signup extends React.Component {
             이미 계정이 있습니까? <a href="#">로그인</a>
           </div>
         </form>
-=======
-        <p>fss</p>
->>>>>>> db94783189891a04295973b2321fa0b61b2f468a
       </Layout>
     );
->>>>>>> c2eb979b7f5de00359bead1484a2276512a1c80b
   }
 }
 export default Signup;

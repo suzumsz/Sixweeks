@@ -8,10 +8,36 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "nojs-menus.scss";
 @import "board.scss";
 
+* {
+  list-style: none;
+}
 html,
 body {
   //background: rgba(188, 224, 253, 0.5);
   min-width: 1024px;
+}
+
+.mainfoo {
+  float: left;
+  width: 200px;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+.subfooter {
+  font-size: 13px;
+  width: 180px;
+}
+.subfoo {
+  margin-left: -20px;
+}
+.logoco {
+  color: #0d4f9b;
+}
+
+.dropdown-toggle nav-link {
+  font-family: "";
+  font-size: 15px;
 }
 
 .text_box {
@@ -45,24 +71,32 @@ body {
   margin-left: -90px;
 }
 .about_sixweeks {
-  margin-left: 230px;
+  width: 1111px;
+  height: 250px;
+  margin-left: 220px;
+}
+.about {
+  margin-left: -110px;
 }
 .about_icon {
+  cursor: pointer;
   width: 114px;
-  height: 120px;
-  border: solid 1px #bcbcbc;
+  height: 100px;
   float: left;
-  margin-right: 80px;
-  margin-top: 50px;
+  margin-right: 100px;
+  margin-top: 100px;
 }
 .sixweeks_story {
-  margin-top: 50px;
-  margin-left: 110px;
+  width: 1111px;
+  height: 450px;
+  margin-left: 220px;
+  //height: 400px;
+  //margin-top: 50px;
+  //margin-left: 110px;
 }
 .sixweeks_s {
   width: 260px;
   height: 187px;
-  border: solid 1px #bcbcbc;
   float: left;
   margin-right: 88.6px;
 }
@@ -91,7 +125,6 @@ body {
 }
 .display-2 {
   margin-top: -200px;
-  text-align: center;
 }
 .display-6 {
   text-align: center;
@@ -106,13 +139,6 @@ body {
 #__next {
   width: 1200px;
   margin: 0 auto;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
-}
->>>>>>> db94783189891a04295973b2321fa0b61b2f468a
->>>>>>> c2eb979b7f5de00359bead1484a2276512a1c80b
 
   .display-2 {
     margin-top: -200px;

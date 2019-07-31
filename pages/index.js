@@ -3,15 +3,9 @@ import React from "react";
 import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
 
 import Login from "./login";
 import { relative } from "path";
->>>>>>> db94783189891a04295973b2321fa0b61b2f468a
->>>>>>> c2eb979b7f5de00359bead1484a2276512a1c80b
 
 export default class extends Page {
   render() {
@@ -20,7 +14,7 @@ export default class extends Page {
         <Jumbotron
           className="text-light rounded-0"
           style={{
-            backgroundColor: "rgba(188,224,253,0.5)",
+            background: "rgba(188,224,253,0.5)",
             paddingTop: 250,
             paddingBottom: 150,
             marginBottom: 100,
@@ -36,17 +30,11 @@ export default class extends Page {
             </h1>
             <h1 className="display-6" style={{ fontWeight: 300 }}>
               <span style={{ fontWeight: 380, fontSize: 35 }}>
-                <br className="v-block d-sm-none" />A SIXWEEKS 에서 다양한 암호화폐 거래해 보세요
+                <br className="v-block d-sm-none" /> <h5 className="logoco">SIXWEEKS</h5> 에서
+                다양한 암호화폐 거래해 보세요
               </span>
             </h1>
-<<<<<<< HEAD
 
-=======
-<<<<<<< HEAD
-=======
-
->>>>>>> db94783189891a04295973b2321fa0b61b2f468a
->>>>>>> c2eb979b7f5de00359bead1484a2276512a1c80b
             <p className="text-right">
               <a
                 href="https://github.com/iaincollins/nextjs-starter"
@@ -74,34 +62,58 @@ export default class extends Page {
         </div>
 
         <div className="sixweeks_story">
-          <div className="sixweeks_s">
-            <h2>광고</h2>
+          <div className="about">
+            <img src="static/img/sixweeksstory.png" />
           </div>
           <div className="sixweeks_s">
-            <h2>광고</h2>
+            <img src="static/img/contents1.png" />
           </div>
           <div className="sixweeks_s">
-            <h2>광고</h2>
+            <img src="static/img/contents2.png" />
+          </div>
+          <div className="sixweeks_s">
+            <img src="static/img/contents3.png" />
           </div>
         </div>
 
         <div className="about_sixweeks">
-          <div className="about_icon">
-            <h5>아이콘</h5>
+          <div className="about">
+            <img src="static/img/aboutsixweeks.png" />
           </div>
           <div className="about_icon">
-            <h5>아이콘</h5>
+            <img src="static/img/cybermoney.png" />
           </div>
           <div className="about_icon">
-            <h5>아이콘</h5>
+            <img src="static/img/protectmoney.png" />
           </div>
           <div className="about_icon">
-            <h5>아이콘</h5>
+            <img src="static/img/technology.png" />
+          </div>
+          <div className="about_icon">
+            <img src="static/img/callcenter.png" />
           </div>
         </div>
 
         <div className="footer">
-          <h3>sixweeks</h3>
+          <img src="static/img/footerlogo.png" />
+          <ul className="maainfooter">
+            <li className="mainfoo">
+              회사정보
+              <ul className="subfooter">
+                <li className="subfoo">회사소개</li>
+                <li className="subfoo">채용안내</li>
+                <li className="subfoo">복지소개</li>
+              </ul>
+            </li>
+            <li className="mainfoo">
+              고객지원
+              <ul className="subfooter">
+                <li className="subfoo">자주하는질문(FAQ)</li>
+                <li className="subfoo">1 : 1 문의하기</li>
+                <li className="subfoo">거래 및 입출금 이용안내</li>
+              </ul>
+            </li>
+          </ul>
         </div>
       </Layout>
     );

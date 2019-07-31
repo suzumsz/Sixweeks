@@ -48,7 +48,7 @@ class Opinion extends React.Component {
           </div>
           <FormGroup check>
             <Label check>
-              <Input type="checkbox" id="checkbox2" /> 비밀글2ya
+              <Input type="checkbox" id="checkbox2" /> 비밀글
             </Label>
           </FormGroup>
           <FormGroup>
