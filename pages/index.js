@@ -4,7 +4,6 @@ import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from
 import Page from "../components/page";
 import Layout from "../components/layout";
 
-import Login from "./login";
 import { relative } from "path";
 
 export default class extends Page {

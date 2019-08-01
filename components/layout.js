@@ -232,7 +232,7 @@ export class UserMenu extends React.Component {
              * they were on before they signed in.
              **/}
             <span className="bar">|</span>
-            <a href="../board" className="board_1">
+            <a href="../newboard" className="board_1">
               <span className="board"> BOARD</span>
             </a>
 
@@ -278,26 +278,24 @@ export class SigninModal extends React.Component {
           <img className="logimg" src="static/img/sixweekslogin.png" />
           <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
           <p className="site">https://www.SIXWEEKS.com</p>
-          <form>
+          <form
+            action="http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/login/login"
+            method="post"
+          >
             <div className="inputLogin">
               <div className="col-md-1">
-                <label className="MB-email" for="inputEmail4">
+                <label className="MB-email" for="email">
                   Email
-                  <input
-                    type="email"
-                    className="form-control-e"
-                    id="inputEmail4"
-                    placeholder="이메일"
-                  />
+                  <input type="email" className="form-control-e" id="email" placeholder="이메일" />
                 </label>
               </div>
               <div className="col-md-2">
-                <label for="inputPassword">
+                <label for="password">
                   Password
                   <input
                     type="password"
                     className="form-control-pw"
-                    id="inputPassword4"
+                    id="password"
                     placeholder="Password"
                   />
                 </label>

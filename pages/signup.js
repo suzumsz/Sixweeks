@@ -8,7 +8,10 @@ class Signup extends React.Component {
         <h1>SIXWEEKS</h1>
         <p>회원가입하는 사이트의 주소가 아래와 같은지 확인하세요</p>
         <p className="site">https://www.SIXWEEKS.com</p>
-        <form>
+        <form
+          action="http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/signup"
+          method="post"
+        >
           <div class="form-group row">
             <div>
               <label class="col">성</label>
