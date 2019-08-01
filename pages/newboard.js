@@ -1,26 +1,43 @@
+import React from "react";
 import Layout from "../components/layout";
 import axios from "axios";
 
 class NewBoard extends React.Component {
-  static async getInitialProps({ req }) {
-    const response = await axios.get("https://jsonplaceholder.typicode.com/users");
-    return {
-      users: response.data
-    };
+  state = {
+    show: ""
+  };
+
+  componentDidMount() {
+    this.callApi()
+      .then(res => this.setState({ show: res }))
+      .catch(err => console.log(err));
   }
 
+  callApi = async () => {
+    const response = await fetch(
+      "http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/show"
+    );
+    const body = await response.json();
+    return body;
+  };
+
   render() {
-    const { users } = this.props;
+    const { show } = this.props;
 
-    const userList = users.map(user => (
-      <li key={user.id}>
-        {user.name}
-        {user.email}
-        {user.id}
-      </li>
-    ));
-
-    return <Layout>{userList}</Layout>;
+    return (
+      <Layout>
+        {this.state.show
+          ? this.state.show.map(user => (
+              <li key={user.number}>
+                {user.number}
+                {user.name}
+                {user.title}
+                {user.content}
+              </li>
+            ))
+          : ""}
+      </Layout>
+    );
   }
 }
 
