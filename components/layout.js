@@ -98,37 +98,10 @@ export default class extends React.Component {
             <Nav navbar>
               <div tabIndex="1" className="dropdown nojs-dropdown">
                 <div className="nav-item">
-                  <span className="dropdown-toggle nav-link">거래소</span>
-                  <span className="dropdown-toggle nav-link">입출금</span>
-                  <span className="dropdown-toggle nav-link">투자내역</span>
-                  <span className="dropdown-toggle nav-link">고객센터</span>
-                </div>
-                <div className="dropdown-menu">
-                  <Link prefetch href="/examples/authentication">
-                    <a href="/examples/authentication" className="dropdown-item">
-                      Auth
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/async">
-                    <a href="/examples/async" className="dropdown-item">
-                      Async Data
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/layout">
-                    <a href="/examples/layout" className="dropdown-item">
-                      Layout
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/routing">
-                    <a href="/examples/routing" className="dropdown-item">
-                      Routing
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/styling">
-                    <a href="/examples/styling" className="dropdown-item">
-                      Styling
-                    </a>
-                  </Link>
+                  <span className="dropdo">거래소</span>
+                  <span className="dropdo">입출금</span>
+                  <span className="dropdo">투자내역</span>
+                  <span className="dropdo">고객센터</span>
                 </div>
               </div>
             </Nav>
@@ -174,46 +147,6 @@ export class MainBody extends React.Component {
           <Row>
             <Col xs="12" md="9" lg="10">
               {this.props.children}
-            </Col>
-            <Col xs="12" md="3" lg="2" style={{ paddingTop: "1em" }}>
-              <h5 className="text-muted text-uppercase">Examples</h5>
-              <ListGroup>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/authentication">
-                    <a href="/examples/authentication" className="d-block">
-                      Auth
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/async">
-                    <a href="/examples/async" className="d-block">
-                      Async
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/layout">
-                    <a href="/examples/layout" className="d-block">
-                      Layout
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/routing">
-                    <a href="/examples/routing" className="d-block">
-                      Routing
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/styling">
-                    <a href="/examples/styling" className="d-block">
-                      Styling
-                    </a>
-                  </Link>
-                </ListGroupItem>
-              </ListGroup>
             </Col>
           </Row>
         </Container>
@@ -302,8 +235,13 @@ export class UserMenu extends React.Component {
             <a href="../board" className="board_1">
               <span className="board"> BOARD</span>
             </a>
-            <a href="/auth?redirect=/" className="login_1" onClick={this.props.toggleModal}>
+
+            <a href="/auth?redirect=/" className="board_1" onClick={this.props.toggleModal}>
               <span className="login" /> LOGIN
+            </a>
+
+            <a href="#" className="board_2">
+              <img src="static/img/search.png" />
             </a>
           </NavItem>
         </Nav>
@@ -337,7 +275,7 @@ export class SigninModal extends React.Component {
     return (
       <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{ maxWidth: 773 }}>
         <ModalBody className="ModalBody">
-          <h1 className="MB-h1">SIXWEEKS</h1>
+          <img className="logimg" src="static/img/sixweekslogin.png" />
           <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
           <p className="site">https://www.SIXWEEKS.com</p>
           <form>
@@ -381,11 +319,11 @@ export class SigninModal extends React.Component {
               <a href="../signup">Sign up</a>
             </button>
             <button type="button" class="naver-btn">
-              <img src="../image/naver-img.png" />
+              <img src="static/img/naver-img.png" />
               NAVER 로그인
             </button>
             <button type="button" class="google-btn">
-              <img src="../image/google-img.png" />
+              <img src="static/img/google-img.png" />
               GOOGLE 로그인
             </button>
           </form>
