@@ -195,7 +195,7 @@ class Signup extends React.Component {
                   </label>
                 </div>
 
-                <button type="submit" class="btn btn-primary">
+                <button type="submit" className="btn btn-primary">
                   Sign up
                 </button>
                 <div>
