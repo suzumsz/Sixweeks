@@ -6,6 +6,7 @@ import Signup from "../pages/signup";
 import Opinion from "../pages/opinion";
 import Board from "../pages/board";
 import { login } from "./userFunction";
+import profile from "./profile";
 
 import {
   Container,
@@ -290,9 +291,10 @@ export class SigninModal extends React.Component {
       email: this.state.email,
       password: this.state.password
     };
+
     login(user).then(res => {
       if (res) {
-        this.props.history.push("/show");
+        this.props.history.push("/profile");
       }
     });
   }
@@ -303,48 +305,6 @@ export class SigninModal extends React.Component {
     return (
       <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{ maxWidth: 773 }}>
         <ModalBody className="ModalBody">
-<<<<<<< HEAD
-          <h1 className="MB-h1">SIXWEEKS</h1>
-          <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
-          <p className="site">https://www.SIXWEEKS.com</p>
-          <form onSubmit={this.onSubmit}>
-            <div className="inputLogin">
-              <div className="col-md-1">
-                <label className="MB-email" htmlFor="email">
-                  Email
-                  <input
-                    type="email"
-                    className="form-control-e"
-                    id="email"
-                    placeholder="이메일"
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                  />
-                </label>
-              </div>
-              <div className="col-md-2">
-                <label htmlFor="password">
-                  Password
-                  <input
-                    type="password"
-                    className="form-control-pw"
-                    id="password"
-                    placeholder="Password"
-                    name="password"
-                    value={this.state.password}
-                    onChange={this.onChange}
-                  />
-                </label>
-              </div>
-            </div>
-            <div className="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" />
-                <label className="form-check-label" htmlFor="gridCheck">
-                  비밀번호저장
-                </label>
-=======
           <div id="logi">
             <img className="logimg" src="static/img/sixweekslogin.png" />
             <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
@@ -352,68 +312,65 @@ export class SigninModal extends React.Component {
               <img src="static/img/lock.png" />
               https://www.SIXWEEKS.com
             </p>
-            <form
-              action="http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/login/login"
-              method="post"
-            >
-              <form>
-                <div id="formm" className="form-group row">
-                  <label for="inputEmail3" className="col-sm-2 col-form-label" />
-                  <div className="col-sm-10">
-                    <input
-                      type="email"
-                      className="form-control"
-                      id="inputEmail3"
-                      placeholder="이메일"
-                    />
-                  </div>
+            <form onSubmit={this.onSubmit}>
+              <div id="formm" className="form-group row">
+                <label htmlFor="inputEmail3" className="col-sm-2 col-form-label" />
+                <div className="col-sm-10">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="inputEmail3"
+                    placeholder="이메일"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                  />
                 </div>
-                <div id="formm" className="form-group row">
-                  <label for="inputPassword3" className="col-sm-2 col-form-label" />
-                  <div className="col-sm-10">
-                    <input
-                      type="password"
-                      className="form-control"
-                      id="inputPassword3"
-                      placeholder="비밀번호"
-                    />
-                  </div>
-                </div>
-                <div className="col-auto my-1">
-                  <div className="custom-control custom-checkbox mr-sm-2">
-                    <input
-                      type="checkbox"
-                      className="custom-control-input"
-                      id="customControlAutosizing"
-                    />
-                    <label className="custom-control-label" for="customControlAutosizing">
-                      비밀번호저장
-                    </label>
-                    <span className="findid">
-                      <a href="#">아이디 / 비밀번호 찾기</a>
-                    </span>
-                  </div>
-                </div>
-              </form>
-
-              <div>
-                <Button className="lobtn" color="primary">
-                  Login
-                </Button>{" "}
-                <Button className="lobtn" outline color="secondary">
-                  <a href="../signup">Sign up</a>
-                </Button>{" "}
->>>>>>> 4dffc1db6f4431cba0c6e68b89f7f9878f3a7c27
               </div>
-              <button type="button" className="naver-btn">
-                <img src="static/img/naver-img.png" />
-                NAVER 로그인
-              </button>
-              <button type="button" className="google-btn">
-                <img src="static/img/google-img.png" />
-                GOOGLE 로그인
-              </button>
+              <div id="formm" className="form-group row">
+                <label htmlFor="inputPassword3" className="col-sm-2 col-form-label" />
+                <div className="col-sm-10">
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="inputPassword3"
+                    placeholder="비밀번호"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
+                  />
+                </div>
+              </div>
+              <div className="col-auto my-1">
+                <div className="custom-control custom-checkbox mr-sm-2">
+                  <input
+                    type="checkbox"
+                    className="custom-control-input"
+                    id="customControlAutosizing"
+                  />
+                  <label className="custom-control-label" htmlFor="customControlAutosizing">
+                    비밀번호저장
+                  </label>
+                  <span className="findid">
+                    <a href="#">아이디 / 비밀번호 찾기</a>
+                  </span>
+                </div>
+              </div>
+              <Button className="lobtn" color="primary">
+                Login
+              </Button>{" "}
+              <Button className="lobtn" outline color="secondary">
+                <a href="../signup">Sign up</a>
+              </Button>{" "}
             </form>
+            <button type="button" className="naver-btn">
+              <img src="static/img/naver-img.png" />
+              NAVER 로그인
+            </button>
+            <button type="button" className="google-btn">
+              <img src="static/img/google-img.png" />
+              GOOGLE 로그인
+            </button>
           </div>
         </ModalBody>
       </Modal>
