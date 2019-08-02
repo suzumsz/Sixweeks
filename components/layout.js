@@ -356,7 +356,7 @@ export class SigninModal extends React.Component {
                   </span>
                 </div>
               </div>
-              <Button className="lobtn" color="primary">
+              <Button className="lobtn" color="primary" path="/profile">
                 Login
               </Button>{" "}
               <Button className="lobtn" outline color="secondary">
