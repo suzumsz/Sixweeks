@@ -1,4 +1,16 @@
+.signup {
+  width: 100vw;
+  height: 1200px;
+  margin-left: -180px;
+  margin-top: -16px;
+  background: rgba(188, 224, 253, 0.5);
+  padding-top: 200px;
+  padding-left: 200px;
+}
 #sign {
+  margin-left: 270px;
+  width: 800px;
+  background-color: #ffffff;
   text-align: center;
   .signimg {
     margin-bottom: 10px;
@@ -8,12 +20,15 @@
     border: solid 1px #000000;
     border-radius: 7px;
     width: 400px;
-    margin-left: 380px;
+    margin-left: 200px;
     margin-bottom: 50px;
     text-align: center;
   }
   .site img {
     margin-right: 5px;
     margin-bottom: 4px;
+  }
+  #name {
+    width: 100px;
   }
 }

@@ -47,171 +47,164 @@ class Signup extends React.Component {
   render() {
     return (
       <Layout>
-        <h1>SIXWEEKS</h1>
-        <p>회원가입하는 사이트의 주소가 아래와 같은지 확인하세요</p>
-        <p className="site">https://www.SIXWEEKS.com</p>
-        <form onSubmit={this.onSubmit}>
-          <div className="form-group row">
-            <div>
-              <label className="col">성</label>
-            </div>
-            <div className="col">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="First name"
-                name="first_name"
-                value={this.state.first_name}
-                onChange={this.onChange}
-              />
-            </div>
-            <div>
-              <label className="col">이름</label>
-            </div>
-            <div className="col">
-              <input
-                type="text"
-                className="form-control"
-                placeholder="Last name"
-                name="last_name"
-                value={this.state.last_name}
-                onChange={this.onChange}
-              />
-            </div>
+        <div className="signup">
+          <div id="sign">
+            <img className="signimg" src="static/img/sixweekslogin.png" />
+            <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
+            <p className="site">
+              <img src="static/img/lock.png" />
+              https://www.SIXWEEKS.com
+            </p>
+            <form onSubmit={this.onSubmit}>
+              <div className="form-group row">
+                <div className="col" id="name">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="성"
+                    name="first_name"
+                    value={this.state.first_name}
+                    onChange={this.onChange}
+                  />
+                </div>
+
+                <div className="col" id="name">
+                  <input
+                    type="text"
+                    className="form-control"
+                    placeholder="이름"
+                    name="last_name"
+                    value={this.state.last_name}
+                    onChange={this.onChange}
+                  />
+                </div>
+              </div>
+              <div className="form-group row">
+                <div>
+                  <label className="col">전화번호</label>
+                </div>
+                <div className="state">
+                  <input
+                    id="national"
+                    className="form-control"
+                    name="national"
+                    value={this.state.national}
+                    onChange={this.onChange}
+                  />
+                </div>
+                <div className="tel">
+                  <input
+                    type="tel"
+                    className="form-control"
+                    id="tel"
+                    placeholder="전화번호"
+                    name="ponenumber"
+                    value={this.state.ponenumber}
+                    onChange={this.onChange}
+                  />
+                </div>
+              </div>
+              <div className="form-group row">
+                <div>
+                  <label htmlFor="inputAddress" />
+                </div>
+                <div className="col-sm-10">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="inputAddress"
+                    placeholder="주소"
+                    name="address"
+                    value={this.state.address}
+                    onChange={this.onChange}
+                  />
+                </div>
+              </div>
+              <div className="form-group row">
+                <div>
+                  <label htmlFor="inputEmail4" className="col-sm-2 col-form-label" />
+                </div>
+                <div className="col-sm-10">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="inputEmail4"
+                    placeholder="이메일"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                  />
+                </div>
+                <button>인증하기</button>
+              </div>
+              <div className="form-group row">
+                <label htmlFor="inputPassword" className="col-sm-2 col-form-label" />
+                <div className="col-sm-10">
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="inputPassword"
+                    placeholder="비밀번호"
+                    name="Password"
+                    value={this.state.Password}
+                    onChange={this.onChange}
+                  />
+                </div>
+              </div>
+              <div className="form-group row">
+                <label htmlFor="inputPassword" className="col-sm-2 col-form-label" />
+                <div className="col-sm-10">
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="inputPasswordcheck"
+                    placeholder="비밀번호 확인"
+                  />
+                </div>
+              </div>
+              <div className="form-group row">
+                <label htmlFor="secu_pass" className="col-sm-2 col-form-label" />
+                <div className="col-sm-10">
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="secu_pass"
+                    placeholder="보안 비밀번호"
+                    name="secu_pass"
+                    value={this.state.secu_pass}
+                    onChange={this.onChange}
+                  />
+                </div>
+              </div>
+              <div className="form-group row">
+                <label htmlFor="inputPassword" className="col-sm-2 col-form-label" />
+                <div className="col-sm-10">
+                  <input
+                    type="password"
+                    className="form-control"
+                    id="inputsecuPasswordcheck"
+                    placeholder="보안 비밀번호 확인"
+                  />
+                </div>
+              </div>
+              <div className="form-group">
+                <div className="form-check">
+                  <input className="form-check-input" type="checkbox" id="gridCheck" />
+                  <label className="form-check-label" htmlFor="gridCheck">
+                    이 계정을 만드는 것에 동의합니다.
+                  </label>
+                </div>
+
+                <button type="submit" className="btn btn-primary">
+                  Sign up
+                </button>
+                <div>
+                  이미 계정이 있습니까? <a href="#">로그인</a>
+                </div>
+              </div>
+            </form>
           </div>
-          <div className="form-group row">
-            <div>
-              <label className="col">전화번호</label>
-            </div>
-            <div className="state">
-              <input
-                id="national"
-                className="form-control"
-                name="national"
-                value={this.state.national}
-                onChange={this.onChange}
-              />
-            </div>
-            <div className="tel">
-              <input
-                type="tel"
-                className="form-control"
-                id="tel"
-                placeholder="전화번호"
-                name="ponenumber"
-                value={this.state.ponenumber}
-                onChange={this.onChange}
-              />
-            </div>
-          </div>
-          <div className="form-group row">
-            <div>
-              <label htmlFor="inputAddress">주소</label>
-            </div>
-            <div className="col-sm-10">
-              <input
-                type="text"
-                className="form-control"
-                id="inputAddress"
-                placeholder="1234 Main St"
-                name="address"
-                value={this.state.address}
-                onChange={this.onChange}
-              />
-            </div>
-          </div>
-          <div className="form-group row">
-            <div>
-              <label htmlFor="inputEmail4" className="col-sm-2 col-form-label">
-                email
-              </label>
-            </div>
-            <div className="col-sm-10">
-              <input
-                type="email"
-                className="form-control"
-                id="inputEmail4"
-                placeholder="이메일"
-                name="email"
-                value={this.state.email}
-                onChange={this.onChange}
-              />
-            </div>
-            <button>인증하기</button>
-          </div>
-          <div className="form-group row">
-            <label htmlFor="inputPassword" className="col-sm-2 col-form-label">
-              비밀번호
-            </label>
-            <div className="col-sm-10">
-              <input
-                type="password"
-                className="form-control"
-                id="inputPassword"
-                placeholder="Password"
-                name="Password"
-                value={this.state.Password}
-                onChange={this.onChange}
-              />
-            </div>
-          </div>
-          <div className="form-group row">
-            <label htmlFor="inputPassword" className="col-sm-2 col-form-label">
-              비밀번호확인
-            </label>
-            <div className="col-sm-10">
-              <input
-                type="password"
-                className="form-control"
-                id="inputPasswordcheck"
-                placeholder="Password"
-              />
-            </div>
-          </div>
-          <div className="form-group row">
-            <label htmlFor="secu_pass" className="col-sm-2 col-form-label">
-              보안비밀번호
-            </label>
-            <div className="col-sm-10">
-              <input
-                type="password"
-                className="form-control"
-                id="secu_pass"
-                placeholder="Password"
-                name="secu_pass"
-                value={this.state.secu_pass}
-                onChange={this.onChange}
-              />
-            </div>
-          </div>
-          <div className="form-group row">
-            <label htmlFor="inputPassword" className="col-sm-2 col-form-label">
-              보안비밀번호확인
-            </label>
-            <div className="col-sm-10">
-              <input
-                type="password"
-                className="form-control"
-                id="inputsecuPasswordcheck"
-                placeholder="Password"
-              />
-            </div>
-          </div>
-          <div className="form-group">
-            <div className="form-check">
-              <input className="form-check-input" type="checkbox" id="gridCheck" />
-              <label className="form-check-label" htmlFor="gridCheck">
-                이 계정을 만드는 것에 동의합니다.
-              </label>
-            </div>
-            <button type="submit" className="btn btn-primary" path="/profile">
-              Sign up
-            </button>
-            <div>
-              이미 계정이 있습니까? <a href="#">로그인</a>
-            </div>
-          </div>
-        </form>
+        </div>
       </Layout>
     );
   }
