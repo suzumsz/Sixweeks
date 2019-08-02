@@ -99,37 +99,10 @@ export default class extends React.Component {
             <Nav navbar>
               <div tabIndex="1" className="dropdown nojs-dropdown">
                 <div className="nav-item">
-                  <span className="dropdown-toggle nav-link">거래소</span>
-                  <span className="dropdown-toggle nav-link">입출금</span>
-                  <span className="dropdown-toggle nav-link">투자내역</span>
-                  <span className="dropdown-toggle nav-link">고객센터</span>
-                </div>
-                <div className="dropdown-menu">
-                  <Link prefetch href="/examples/authentication">
-                    <a href="/examples/authentication" className="dropdown-item">
-                      Auth
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/async">
-                    <a href="/examples/async" className="dropdown-item">
-                      Async Data
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/layout">
-                    <a href="/examples/layout" className="dropdown-item">
-                      Layout
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/routing">
-                    <a href="/examples/routing" className="dropdown-item">
-                      Routing
-                    </a>
-                  </Link>
-                  <Link prefetch href="/examples/styling">
-                    <a href="/examples/styling" className="dropdown-item">
-                      Styling
-                    </a>
-                  </Link>
+                  <span className="dropdo">거래소</span>
+                  <span className="dropdo">입출금</span>
+                  <span className="dropdo">투자내역</span>
+                  <span className="dropdo">고객센터</span>
                 </div>
               </div>
             </Nav>
@@ -175,46 +148,6 @@ export class MainBody extends React.Component {
           <Row>
             <Col xs="12" md="9" lg="10">
               {this.props.children}
-            </Col>
-            <Col xs="12" md="3" lg="2" style={{ paddingTop: "1em" }}>
-              <h5 className="text-muted text-uppercase">Examples</h5>
-              <ListGroup>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/authentication">
-                    <a href="/examples/authentication" className="d-block">
-                      Auth
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/async">
-                    <a href="/examples/async" className="d-block">
-                      Async
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/layout">
-                    <a href="/examples/layout" className="d-block">
-                      Layout
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/routing">
-                    <a href="/examples/routing" className="d-block">
-                      Routing
-                    </a>
-                  </Link>
-                </ListGroupItem>
-                <ListGroupItem>
-                  <Link prefetch href="/examples/styling">
-                    <a href="/examples/styling" className="d-block">
-                      Styling
-                    </a>
-                  </Link>
-                </ListGroupItem>
-              </ListGroup>
             </Col>
           </Row>
         </Container>
@@ -303,8 +236,13 @@ export class UserMenu extends React.Component {
             <a href="../newboard" className="board_1">
               <span className="board"> BOARD</span>
             </a>
-            <a href="/auth?redirect=/" className="login_1" onClick={this.props.toggleModal}>
+
+            <a href="/auth?redirect=/" className="board_1" onClick={this.props.toggleModal}>
               <span className="login" /> LOGIN
+            </a>
+
+            <a href="#" className="board_2">
+              <img src="static/img/search.png" />
             </a>
           </NavItem>
         </Nav>
@@ -365,6 +303,7 @@ export class SigninModal extends React.Component {
     return (
       <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{ maxWidth: 773 }}>
         <ModalBody className="ModalBody">
+<<<<<<< HEAD
           <h1 className="MB-h1">SIXWEEKS</h1>
           <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
           <p className="site">https://www.SIXWEEKS.com</p>
@@ -405,24 +344,77 @@ export class SigninModal extends React.Component {
                 <label className="form-check-label" htmlFor="gridCheck">
                   비밀번호저장
                 </label>
+=======
+          <div id="logi">
+            <img className="logimg" src="static/img/sixweekslogin.png" />
+            <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
+            <p className="site">
+              <img src="static/img/lock.png" />
+              https://www.SIXWEEKS.com
+            </p>
+            <form
+              action="http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/login/login"
+              method="post"
+            >
+              <form>
+                <div id="formm" className="form-group row">
+                  <label for="inputEmail3" className="col-sm-2 col-form-label" />
+                  <div className="col-sm-10">
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="inputEmail3"
+                      placeholder="이메일"
+                    />
+                  </div>
+                </div>
+                <div id="formm" className="form-group row">
+                  <label for="inputPassword3" className="col-sm-2 col-form-label" />
+                  <div className="col-sm-10">
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="inputPassword3"
+                      placeholder="비밀번호"
+                    />
+                  </div>
+                </div>
+                <div className="col-auto my-1">
+                  <div className="custom-control custom-checkbox mr-sm-2">
+                    <input
+                      type="checkbox"
+                      className="custom-control-input"
+                      id="customControlAutosizing"
+                    />
+                    <label className="custom-control-label" for="customControlAutosizing">
+                      비밀번호저장
+                    </label>
+                    <span className="findid">
+                      <a href="#">아이디 / 비밀번호 찾기</a>
+                    </span>
+                  </div>
+                </div>
+              </form>
+
+              <div>
+                <Button className="lobtn" color="primary">
+                  Login
+                </Button>{" "}
+                <Button className="lobtn" outline color="secondary">
+                  <a href="../signup">Sign up</a>
+                </Button>{" "}
+>>>>>>> 4dffc1db6f4431cba0c6e68b89f7f9878f3a7c27
               </div>
-            </div>
-            <label className="findid">아이디/비밀번호 찾기</label>
-            <button type="submit" class="btn-primary4">
-              Login
-            </button>
-            <button type="submit" class="btn-primary4">
-              <a href="../signup">Sign up</a>
-            </button>
-            <button type="button" class="naver-btn">
-              <img src="../image/naver-img.png" />
-              NAVER 로그인
-            </button>
-            <button type="button" class="google-btn">
-              <img src="../image/google-img.png" />
-              GOOGLE 로그인
-            </button>
-          </form>
+              <button type="button" className="naver-btn">
+                <img src="static/img/naver-img.png" />
+                NAVER 로그인
+              </button>
+              <button type="button" className="google-btn">
+                <img src="static/img/google-img.png" />
+                GOOGLE 로그인
+              </button>
+            </form>
+          </div>
         </ModalBody>
       </Modal>
     );

@@ -7,6 +7,8 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
 @import "nojs-menus.scss";
 @import "board.scss";
+@import "login.scss";
+@import "signup.scss";
 
 * {
   list-style: none;
@@ -14,15 +16,48 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 html,
 body {
   //background: rgba(188, 224, 253, 0.5);
-  min-width: 1024px;
+  min-width: 1366px;
+}
+.container {
+  min-width: 1366px;
+}
+.more {
 }
 
+.board_2 {
+  margin-left: 20px;
+}
+.dropdo {
+  font-size: 15px;
+  margin-left: 30px;
+  color: #343638;
+}
+.cont {
+  width: 1200px;
+  margin-left: 250px;
+}
+
+.footerinfo {
+  width: 700px;
+  height: 400px;
+  margin-left: 650px;
+  text-align: right;
+}
+
+.footerinfo img {
+  padding-top: 13px;
+  padding-left: 525px;
+}
+.footerinfo address {
+  padding-top: 120px;
+}
 .mainfoo {
   float: left;
   width: 200px;
   height: 35px;
   line-height: 35px;
   text-align: center;
+  margin-top: 65px;
 }
 .subfooter {
   font-size: 13px;
@@ -64,53 +99,61 @@ body {
   text-align: center;
 }
 .footer {
-  width: 1366px;
-  height: 421px;
+  height: 420px;
+  margin-top: 200px;
   background-color: #bcbcbc;
-  margin-top: 480px;
-  margin-left: -90px;
 }
+.footer img {
+  margin-top: 60px;
+  float: left;
+}
+
+.footerin {
+  margin-left: 150px;
+}
+
 .about_sixweeks {
   width: 1111px;
   height: 250px;
   margin-left: 220px;
 }
 .about {
-  margin-left: -110px;
+  margin-left: -150px;
 }
 .about_icon {
   cursor: pointer;
-  width: 114px;
   height: 100px;
   float: left;
-  margin-right: 100px;
+  margin-left: -65px;
+  margin-right: 210px;
   margin-top: 100px;
 }
 .sixweeks_story {
   width: 1111px;
-  height: 450px;
+  height: 500px;
   margin-left: 220px;
   //height: 400px;
-  //margin-top: 50px;
+  margin-top: 100px;
   //margin-left: 110px;
 }
 .sixweeks_s {
   width: 260px;
   height: 187px;
   float: left;
-  margin-right: 88.6px;
+  margin-right: 175px;
+  margin-left: -100px;
+  margin-top: 80px;
 }
 .coin {
-  width: 972px;
+  width: 1080px;
   height: 743px;
   border: solid 1px #bcbcbc;
   margin-top: 200px;
-  margin-left: 123px;
-  background-color: red;
+  margin-left: 75px;
 }
 
 .squ-box {
-  margin-left: 100px;
+  margin-left: 315px;
   position: absolute;
   z-index: 10;
   bottom: -100px;
@@ -121,7 +164,7 @@ body {
   border: solid 1px #bcbcbc;
   background-color: #ffffff;
   float: left;
-  margin-right: 28px;
+  margin-right: 60px;
 }
 .display-2 {
   margin-top: -200px;
@@ -137,9 +180,6 @@ body {
 }
 
 #__next {
-  width: 1200px;
-  margin: 0 auto;
-
   .display-2 {
     margin-top: -200px;
     margin-left: 310px;
@@ -149,8 +189,7 @@ body {
     font-size: 1.4em;
     padding-left: 50px;
   }
-  .main_footer {
-  }
+
   pre {
     background-color: #333;
     border-color: #333;
@@ -164,7 +203,9 @@ body {
   .navbar .dropdown-item,
   .navbar button {
     font-size: 15px;
-    background: rgba(188, 224, 253, 0.5);
+    //background: rgba(188, 224, 253, 0.5);
+    background-image: url(static/img/navb.png);
+    background-size: cover;
   }
   .navbar {
     padding-left: 150px;
@@ -225,15 +266,10 @@ body {
     height: 40px;
   }
 
-  .site {
-    margin: 10px;
-    border: 1px solid black;
-  }
   .form-check {
     float: left;
   }
-  .findid {
-  }
+
   .btn-primary4 {
     margin: 2em;
     width: 193px;

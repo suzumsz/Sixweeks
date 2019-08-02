@@ -1,14 +1,59 @@
-@charset "UTF-8";
-$ionicons-font-path: "/fonts/ionicons" !default;
-$ionicons-font-family: "Ionicons" !default;
-$ionicons-version: "3.0.0-alpha.3" !default;
-@import "../node_modules/ionicons/dist/scss/ionicons";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
-@import "nojs-menus.scss";
+#logi {
+  text-align: center;
+  height: 920px;
+  // background-color: yellow;
 
-html,
-body {
-  //background: rgba(188, 224, 253, 0.5);
-  min-width: 1366px;
+  .logimg {
+    margin-bottom: 10px;
+    margin-top: 120px;
+  }
+  .site {
+    border: solid 1px #000000;
+    border-radius: 7px;
+    width: 400px;
+    margin-left: 170px;
+    margin-bottom: 50px;
+  }
+  .site img {
+    margin-right: 5px;
+    margin-bottom: 4px;
+  }
+  #formm {
+    width: 580px;
+    margin-left: 35px;
+    margin-top: 30px;
+  }
+  .custom-control-label {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .findid {
+    margin-left: 155px;
+  }
+
+  .lobtn {
+    width: 185px;
+    height: 50px;
+    margin-top: 42px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .naver-btn {
+    border-radius: 3px;
+    border: none;
+    width: 435px;
+    height: 50px;
+    background-color: #36c027;
+    cursor: pointer;
+    margin-top: 70px;
+  }
+  .google-btn {
+    border-radius: 3px;
+    border: solid 1px #000000;
+    width: 435px;
+    height: 50px;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
+  }
 }

@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/layout";
 import { Col, Row, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 import { Table, Pagination, PaginationItem, PaginationLink } from "reactstrap";
-import axios from "axios";
 
 class Board extends React.Component {
   render() {
