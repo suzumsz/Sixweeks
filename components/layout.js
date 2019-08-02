@@ -303,48 +303,6 @@ export class SigninModal extends React.Component {
     return (
       <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{ maxWidth: 773 }}>
         <ModalBody className="ModalBody">
-<<<<<<< HEAD
-          <h1 className="MB-h1">SIXWEEKS</h1>
-          <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
-          <p className="site">https://www.SIXWEEKS.com</p>
-          <form onSubmit={this.onSubmit}>
-            <div className="inputLogin">
-              <div className="col-md-1">
-                <label className="MB-email" htmlFor="email">
-                  Email
-                  <input
-                    type="email"
-                    className="form-control-e"
-                    id="email"
-                    placeholder="이메일"
-                    name="email"
-                    value={this.state.email}
-                    onChange={this.onChange}
-                  />
-                </label>
-              </div>
-              <div className="col-md-2">
-                <label htmlFor="password">
-                  Password
-                  <input
-                    type="password"
-                    className="form-control-pw"
-                    id="password"
-                    placeholder="Password"
-                    name="password"
-                    value={this.state.password}
-                    onChange={this.onChange}
-                  />
-                </label>
-              </div>
-            </div>
-            <div className="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" />
-                <label className="form-check-label" htmlFor="gridCheck">
-                  비밀번호저장
-                </label>
-=======
           <div id="logi">
             <img className="logimg" src="static/img/sixweekslogin.png" />
             <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
@@ -403,7 +361,6 @@ export class SigninModal extends React.Component {
                 <Button className="lobtn" outline color="secondary">
                   <a href="../signup">Sign up</a>
                 </Button>{" "}
->>>>>>> 4dffc1db6f4431cba0c6e68b89f7f9878f3a7c27
               </div>
               <button type="button" className="naver-btn">
                 <img src="static/img/naver-img.png" />
