@@ -5,6 +5,7 @@ import Link from "next/link";
 import Signup from "../pages/signup";
 import Opinion from "../pages/opinion";
 import Board from "../pages/board";
+import { login } from "./userFunction";
 
 import {
   Container,
@@ -331,6 +332,33 @@ export class AdminMenuItem extends React.Component {
 }
 
 export class SigninModal extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      email: "",
+      password: ""
+    };
+
+    this.onChange = this.onChange.bind(this);
+    this.onSubmit = this.onSubmit.bind(this);
+  }
+  onChange(e) {
+    this.setState({ [e.target.name]: e.target.value });
+  }
+  onSubmit(e) {
+    e.preventDefault();
+
+    const user = {
+      email: this.state.email,
+      password: this.state.password
+    };
+    login(user).then(res => {
+      if (res) {
+        this.props.history.push("/show");
+      }
+    });
+  }
+
   render() {
     if (this.props.providers === null) return null;
 
@@ -340,25 +368,33 @@ export class SigninModal extends React.Component {
           <h1 className="MB-h1">SIXWEEKS</h1>
           <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
           <p className="site">https://www.SIXWEEKS.com</p>
-          <form
-            action="http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/login/login"
-            method="post"
-          >
+          <form onSubmit={this.onSubmit}>
             <div className="inputLogin">
               <div className="col-md-1">
-                <label className="MB-email" for="email">
+                <label className="MB-email" htmlFor="email">
                   Email
-                  <input type="email" className="form-control-e" id="email" placeholder="이메일" />
+                  <input
+                    type="email"
+                    className="form-control-e"
+                    id="email"
+                    placeholder="이메일"
+                    name="email"
+                    value={this.state.email}
+                    onChange={this.onChange}
+                  />
                 </label>
               </div>
               <div className="col-md-2">
-                <label for="password">
+                <label htmlFor="password">
                   Password
                   <input
                     type="password"
                     className="form-control-pw"
                     id="password"
                     placeholder="Password"
+                    name="password"
+                    value={this.state.password}
+                    onChange={this.onChange}
                   />
                 </label>
               </div>
@@ -366,7 +402,7 @@ export class SigninModal extends React.Component {
             <div className="form-group">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="gridCheck" />
-                <label className="form-check-label" for="gridCheck">
+                <label className="form-check-label" htmlFor="gridCheck">
                   비밀번호저장
                 </label>
               </div>
