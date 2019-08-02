@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-import axios from "axios";
 
 class NewBoard extends React.Component {
   state = {

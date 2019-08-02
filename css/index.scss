@@ -7,6 +7,8 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
 @import "nojs-menus.scss";
 @import "board.scss";
+@import "login.scss";
+@import "signup.scss";
 
 * {
   list-style: none;
@@ -14,10 +16,10 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 html,
 body {
   //background: rgba(188, 224, 253, 0.5);
-  min-width: 1484px;
+  min-width: 1366px;
 }
 .container {
-  min-width: 1484px;
+  min-width: 1366px;
 }
 .more {
 }
@@ -201,7 +203,9 @@ body {
   .navbar .dropdown-item,
   .navbar button {
     font-size: 15px;
-    background: rgba(188, 224, 253, 0.5);
+    //background: rgba(188, 224, 253, 0.5);
+    background-image: url(static/img/navb.png);
+    background-size: cover;
   }
   .navbar {
     padding-left: 150px;
@@ -262,10 +266,6 @@ body {
     height: 40px;
   }
 
-  .site {
-    margin: 10px;
-    border: 1px solid black;
-  }
   .form-check {
     float: left;
   }

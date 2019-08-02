@@ -5,17 +5,20 @@ import Page from "../components/page";
 import Layout from "../components/layout";
 
 import { relative } from "path";
+import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from "constants";
 
 export default class extends Page {
   render() {
     return (
       <Layout {...this.props} navmenu={false} container={false}>
-        <Jumbotron
+        <div
           className="text-light rounded-0"
           style={{
-            backgroundImage: "url(static/img/background.png)",
+            backgroundImage: "url(static/img/baround.png)",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
             paddingTop: 250,
-            paddingBottom: 150,
+            paddingBottom: 300,
             marginBottom: 100,
             position: "relative"
           }}
@@ -54,8 +57,7 @@ export default class extends Page {
               <h5>비트코인</h5>
             </div>
           </div>
-        </Jumbotron>
-
+        </div>
         <div className="cont">
           <div className="coin">
             <h2>시세데스네~</h2>

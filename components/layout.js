@@ -275,56 +275,75 @@ export class SigninModal extends React.Component {
     return (
       <Modal isOpen={this.props.modal} toggle={this.props.toggleModal} style={{ maxWidth: 773 }}>
         <ModalBody className="ModalBody">
-          <img className="logimg" src="static/img/sixweekslogin.png" />
-          <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
-          <p className="site">https://www.SIXWEEKS.com</p>
-          <form
-            action="http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/login/login"
-            method="post"
-          >
-            <div className="inputLogin">
-              <div className="col-md-1">
-                <label className="MB-email" for="email">
-                  Email
-                  <input type="email" className="form-control-e" id="email" placeholder="이메일" />
-                </label>
+          <div id="logi">
+            <img className="logimg" src="static/img/sixweekslogin.png" />
+            <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
+            <p className="site">
+              <img src="static/img/lock.png" />
+              https://www.SIXWEEKS.com
+            </p>
+            <form
+              action="http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/login/login"
+              method="post"
+            >
+              <form>
+                <div id="formm" className="form-group row">
+                  <label for="inputEmail3" className="col-sm-2 col-form-label" />
+                  <div className="col-sm-10">
+                    <input
+                      type="email"
+                      className="form-control"
+                      id="inputEmail3"
+                      placeholder="이메일"
+                    />
+                  </div>
+                </div>
+                <div id="formm" className="form-group row">
+                  <label for="inputPassword3" className="col-sm-2 col-form-label" />
+                  <div className="col-sm-10">
+                    <input
+                      type="password"
+                      className="form-control"
+                      id="inputPassword3"
+                      placeholder="비밀번호"
+                    />
+                  </div>
+                </div>
+                <div className="col-auto my-1">
+                  <div className="custom-control custom-checkbox mr-sm-2">
+                    <input
+                      type="checkbox"
+                      className="custom-control-input"
+                      id="customControlAutosizing"
+                    />
+                    <label className="custom-control-label" for="customControlAutosizing">
+                      비밀번호저장
+                    </label>
+                    <span className="findid">
+                      <a href="#">아이디 / 비밀번호 찾기</a>
+                    </span>
+                  </div>
+                </div>
+              </form>
+
+              <div>
+                <Button className="lobtn" color="primary">
+                  Login
+                </Button>{" "}
+                <Button className="lobtn" outline color="secondary">
+                  <a href="../signup">Sign up</a>
+                </Button>{" "}
               </div>
-              <div className="col-md-2">
-                <label for="password">
-                  Password
-                  <input
-                    type="password"
-                    className="form-control-pw"
-                    id="password"
-                    placeholder="Password"
-                  />
-                </label>
-              </div>
-            </div>
-            <div className="form-group">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="gridCheck" />
-                <label className="form-check-label" for="gridCheck">
-                  비밀번호저장
-                </label>
-              </div>
-            </div>
-            <label className="findid">아이디/비밀번호 찾기</label>
-            <button type="submit" class="btn-primary4">
-              Login
-            </button>
-            <button type="submit" class="btn-primary4">
-              <a href="../signup">Sign up</a>
-            </button>
-            <button type="button" class="naver-btn">
-              <img src="static/img/naver-img.png" />
-              NAVER 로그인
-            </button>
-            <button type="button" class="google-btn">
-              <img src="static/img/google-img.png" />
-              GOOGLE 로그인
-            </button>
-          </form>
+              <button type="button" className="naver-btn">
+                <img src="static/img/naver-img.png" />
+                NAVER 로그인
+              </button>
+              <button type="button" className="google-btn">
+                <img src="static/img/google-img.png" />
+                GOOGLE 로그인
+              </button>
+            </form>
+          </div>
         </ModalBody>
       </Modal>
     );

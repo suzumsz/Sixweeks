@@ -1,5 +1,59 @@
 #logi {
+  text-align: center;
+  height: 920px;
+  // background-color: yellow;
+
   .logimg {
-    margin-left: 100px;
+    margin-bottom: 10px;
+    margin-top: 120px;
+  }
+  .site {
+    border: solid 1px #000000;
+    border-radius: 7px;
+    width: 400px;
+    margin-left: 170px;
+    margin-bottom: 50px;
+  }
+  .site img {
+    margin-right: 5px;
+    margin-bottom: 4px;
+  }
+  #formm {
+    width: 580px;
+    margin-left: 35px;
+    margin-top: 30px;
+  }
+  .custom-control-label {
+    margin-left: 15px;
+    margin-top: 20px;
+  }
+  .findid {
+    margin-left: 155px;
+  }
+
+  .lobtn {
+    width: 185px;
+    height: 50px;
+    margin-top: 42px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .naver-btn {
+    border-radius: 3px;
+    border: none;
+    width: 435px;
+    height: 50px;
+    background-color: #36c027;
+    cursor: pointer;
+    margin-top: 70px;
+  }
+  .google-btn {
+    border-radius: 3px;
+    border: solid 1px #000000;
+    width: 435px;
+    height: 50px;
+    background-color: #ffffff;
+    cursor: pointer;
+    margin-top: 15px;
   }
 }
