@@ -293,9 +293,8 @@ export class SigninModal extends React.Component {
     };
 
     login(user).then(res => {
-      if (res) {
-        this.props.history.push("/profile");
-      }
+      console.log("로그인 성공");
+      path = profile;
     });
   }
 
@@ -356,7 +355,7 @@ export class SigninModal extends React.Component {
                   </span>
                 </div>
               </div>
-              <Button className="lobtn" color="primary" path="/profile">
+              <Button className="lobtn" color="primary">
                 Login
               </Button>{" "}
               <Button className="lobtn" outline color="secondary">

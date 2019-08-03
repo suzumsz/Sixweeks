@@ -1,7 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { register } from "../components/userFunction";
-import profile from "../components/profile";
+import Profile from "../components/profile";
 
 class Signup extends React.Component {
   constructor() {
@@ -39,7 +39,7 @@ class Signup extends React.Component {
 
     register(user).then(res => {
       if (res) {
-        this.props.history.push(`/profile`);
+        this.props.history.push(`../components/profile`);
       }
     });
   }
@@ -145,8 +145,8 @@ class Signup extends React.Component {
                     className="form-control"
                     id="inputPassword"
                     placeholder="비밀번호"
-                    name="Password"
-                    value={this.state.Password}
+                    name="password"
+                    value={this.state.password}
                     onChange={this.onChange}
                   />
                 </div>
