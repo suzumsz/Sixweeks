@@ -1,14 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
+import Board from "./board";
 import Layout from "../components/layout";
 
-class NewBoard extends React.Component {
+class NewBoard extends Component {
   state = {
-    show: ""
+    board: ""
   };
 
   componentDidMount() {
     this.callApi()
-      .then(res => this.setState({ show: res }))
+      .then(res => this.setState({ board: res }, console.log(res)))
       .catch(err => console.log(err));
   }
 
@@ -21,20 +22,23 @@ class NewBoard extends React.Component {
   };
 
   render() {
-    const { show } = this.props;
-
     return (
       <Layout>
-        {this.state.show
-          ? this.state.show.map(user => (
-              <li key={user.number}>
-                {user.number}
-                {user.name}
-                {user.title}
-                {user.content}
-              </li>
-            ))
-          : ""}
+        <div>
+          {this.state.board
+            ? this.state.board.map(c => {
+                return (
+                  <Board
+                    key={c.number}
+                    number={c.number}
+                    title={c.title}
+                    name={c.name}
+                    write_date={c.write_date}
+                  />
+                );
+              })
+            : ""}
+        </div>
       </Layout>
     );
   }
