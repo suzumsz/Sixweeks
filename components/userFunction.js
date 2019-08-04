@@ -13,7 +13,7 @@ export const register = newUser => {
       secu_pass: newUser.secu_pass
     })
     .then(res => {
-      console.log("Registerd");
+      console.log(res);
     });
 };
 
@@ -27,6 +27,21 @@ export const login = user => {
       console.log("login!!");
       localStorage.setItem("usertoken", res.data);
       return res.data;
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
+
+export const write = note => {
+  return axios
+    .post("http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/write", {
+      title: note.title,
+      name: note.name,
+      content: note.content
+    })
+    .then(res => {
+      console.log(res);
     })
     .catch(err => {
       console.log(err);
