@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
+import { Table } from "reactstrap";
 
 import { relative } from "path";
 import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from "constants";
@@ -60,7 +61,28 @@ export default class extends Page {
         </div>
         <div className="cont">
           <div className="coin">
-            <h2>시세데스네~</h2>
+            <Table borderless className="tab">
+              <thead>
+                <tr>
+                  <th className="headNumber">이름</th>
+                  <th className="headTitle">시가</th>
+                  <th className="headWriter">거래량</th>
+                  <th className="headDate">변동률%</th>
+                </tr>
+              </thead>
+            </Table>
+            <Table borderless>
+              <thead>
+                <tr>
+                  <th className="headNumber">
+                    <img src="static/img/star.png" /> 이름
+                  </th>
+                  <th className="headTitle">시가</th>
+                  <th className="headWriter">거래량</th>
+                  <th className="headDate">변동률%</th>
+                </tr>
+              </thead>
+            </Table>
           </div>
 
           <div className="sixweeks_story">

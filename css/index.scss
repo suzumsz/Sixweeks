@@ -9,6 +9,7 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "board.scss";
 @import "login.scss";
 @import "signup.scss";
+@import "opinion.scss";
 
 * {
   list-style: none;
@@ -21,7 +22,8 @@ body {
 .container {
   min-width: 1366px;
 }
-.more {
+.tab {
+  border-bottom: solid 1px #bcbcbc;
 }
 
 .board_2 {
@@ -80,15 +82,7 @@ body {
   height: 40px;
   margin: 0 auto;
 }
-.board_box {
-  width: 950px;
-  height: 695px;
-  border: solid 1px #bcbcbc;
-}
-.write {
-  border-bottom: solid 2.5px #0d4f9b;
-  width: 65px;
-}
+
 .board {
   margin-right: 20px;
 }
@@ -147,7 +141,7 @@ body {
 .coin {
   width: 1080px;
   height: 743px;
-  border: solid 1px #bcbcbc;
+
   margin-top: 200px;
   margin-left: 75px;
 }
@@ -212,29 +206,9 @@ body {
     padding-right: 150px;
   }
 
-  @media (max-width: 768px) {
-    .display-2 {
-      font-size: 3em;
-    }
-    .display-3 {
-      font-size: 2.5em;
-    }
-    .display-4 {
-      font-size: 2em;
-    }
-  }
-
   .icon-spin {
     display: inline-block;
     animation: spin 1s infinite linear;
-  }
-  @keyframes spin {
-    0% {
-      transform: rotate(0deg);
-    }
-    100% {
-      transform: rotate(359deg);
-    }
   }
 
   /**
@@ -243,16 +217,6 @@ body {
  **/
   .navbar .dropdown {
     display: block;
-  }
-
-  @media (max-width: 768px) {
-    .navbar .dropdown-menu {
-      position: relative !important;
-      display: block !important;
-      transform: none !important;
-      padding: 0 0 10px 0;
-      border: none;
-    }
   }
 
   /**

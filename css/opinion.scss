@@ -1,14 +1,39 @@
-@charset "UTF-8";
-$ionicons-font-path: "/fonts/ionicons" !default;
-$ionicons-font-family: "Ionicons" !default;
-$ionicons-version: "3.0.0-alpha.3" !default;
-@import "../node_modules/ionicons/dist/scss/ionicons";
-@import "../node_modules/bootstrap/scss/bootstrap.scss";
-@import "../node_modules/react-bootstrap-table/dist/react-bootstrap-table-all.min";
-@import "nojs-menus.scss";
-
+.body {
+  margin-top: 50px;
+  margin-left: 150px;
+  height: 900px;
+}
+.body-title {
+  padding: 30px;
+  padding-left: 0px;
+}
 .board_box {
-  width: 500px;
-  height: 500px;
-  border: solid 1px #bcbcbc;
+  width: 1080px;
+  height: 695px;
+  border: solid 1px #0d4f9b;
+  margin-top: 50px;
+}
+.write {
+  border-bottom: solid 2.5px #0d4f9b;
+  width: 65px;
+  margin-top: 100px;
+  margin-left: 100px;
+  margin-bottom: 50px;
+}
+.input {
+  width: 770px;
+  height: 40px;
+  margin-left: 100px;
+  margin-bottom: 20px;
+}
+.opinibtn {
+  width: 155px;
+  height: 35px;
+  margin-top: 20px;
+}
+#btn1 {
+  margin-left: 100px;
+}
+#btn2 {
+  margin-left: 450px;
 }

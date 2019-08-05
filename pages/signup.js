@@ -50,14 +50,14 @@ class Signup extends React.Component {
         <div className="signup">
           <div id="sign">
             <img className="signimg" src="static/img/sixweekslogin.png" />
-            <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
+            <p>회원가입하는 사이트의 주소가 아래와 같은지 확인하세요</p>
             <p className="site">
               <img src="static/img/lock.png" />
               https://www.SIXWEEKS.com
             </p>
             <form onSubmit={this.onSubmit}>
               <div className="form-group row">
-                <div className="col" id="name">
+                <div className="col" className="name1">
                   <input
                     type="text"
                     className="form-control"
@@ -68,7 +68,7 @@ class Signup extends React.Component {
                   />
                 </div>
 
-                <div className="col" id="name">
+                <div className="col" className="name2">
                   <input
                     type="text"
                     className="form-control"
@@ -80,14 +80,12 @@ class Signup extends React.Component {
                 </div>
               </div>
               <div className="form-group row">
-                <div>
-                  <label className="col">전화번호</label>
-                </div>
                 <div className="state">
                   <input
                     id="national"
                     className="form-control"
                     name="national"
+                    placeholder="+국가번호"
                     value={this.state.national}
                     onChange={this.onChange}
                   />
@@ -105,10 +103,7 @@ class Signup extends React.Component {
                 </div>
               </div>
               <div className="form-group row">
-                <div>
-                  <label htmlFor="inputAddress" />
-                </div>
-                <div className="col-sm-10">
+                <div className="col-sm-10" className="address">
                   <input
                     type="text"
                     className="form-control"
@@ -121,10 +116,7 @@ class Signup extends React.Component {
                 </div>
               </div>
               <div className="form-group row">
-                <div>
-                  <label htmlFor="inputEmail4" className="col-sm-2 col-form-label" />
-                </div>
-                <div className="col-sm-10">
+                <div className="col-sm-10" className="email">
                   <input
                     type="email"
                     className="form-control"
@@ -135,11 +127,22 @@ class Signup extends React.Component {
                     onChange={this.onChange}
                   />
                 </div>
-                <button>인증하기</button>
+                <button type="submit" className="btn btn-primary">
+                  인증하기
+                </button>
               </div>
+              <p
+                style={{
+                  fontSize: 11,
+                  marginLeft: -310,
+                  marginTop: -10,
+                  color: "#2981e6"
+                }}
+              >
+                * 이메일 인증을 받아야 사용이 가능합니다. 정확히 입력해 주세요.
+              </p>
               <div className="form-group row">
-                <label htmlFor="inputPassword" className="col-sm-2 col-form-label" />
-                <div className="col-sm-10">
+                <div className="col-sm-10" className="pw">
                   <input
                     type="password"
                     className="form-control"
@@ -152,8 +155,7 @@ class Signup extends React.Component {
                 </div>
               </div>
               <div className="form-group row">
-                <label htmlFor="inputPassword" className="col-sm-2 col-form-label" />
-                <div className="col-sm-10">
+                <div className="col-sm-10" className="pw">
                   <input
                     type="password"
                     className="form-control"
@@ -163,8 +165,7 @@ class Signup extends React.Component {
                 </div>
               </div>
               <div className="form-group row">
-                <label htmlFor="secu_pass" className="col-sm-2 col-form-label" />
-                <div className="col-sm-10">
+                <div className="col-sm-10" className="pw">
                   <input
                     type="password"
                     className="form-control"
@@ -177,8 +178,7 @@ class Signup extends React.Component {
                 </div>
               </div>
               <div className="form-group row">
-                <label htmlFor="inputPassword" className="col-sm-2 col-form-label" />
-                <div className="col-sm-10">
+                <div className="col-sm-10" className="pw">
                   <input
                     type="password"
                     className="form-control"
@@ -187,15 +187,23 @@ class Signup extends React.Component {
                   />
                 </div>
               </div>
-              <div className="form-group">
-                <div className="form-check">
-                  <input className="form-check-input" type="checkbox" id="gridCheck" />
-                  <label className="form-check-label" htmlFor="gridCheck">
+              <div className="col-auto my-1">
+                <div className="custom-control custom-checkbox mr-sm-2">
+                  <input
+                    type="checkbox"
+                    className="custom-control-input"
+                    id="customControlAutosizing"
+                  />
+                  <label
+                    className="custom-control-label"
+                    id="agree"
+                    htmlFor="customControlAutosizing"
+                  >
                     이 계정을 만드는 것에 동의합니다.
                   </label>
                 </div>
 
-                <button type="submit" className="btn btn-primary">
+                <button type="submit" id="signub" className="btn btn-primary">
                   Sign up
                 </button>
                 <div>
