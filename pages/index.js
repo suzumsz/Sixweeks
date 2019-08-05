@@ -1,14 +1,48 @@
 import Link from "next/link";
 import React from "react";
-import { Container, Row, Col, Button, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
+import { Container, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
-import { Table } from "reactstrap";
+import {
+  Table,
+  InputGroup,
+  InputGroupText,
+  InputGroupAddon,
+  Input,
+  TabContent,
+  TabPane,
+  Nav,
+  NavItem,
+  NavLink,
+  Card,
+  Button,
+  CardTitle,
+  CardText,
+  Row,
+  Col
+} from "reactstrap";
+import classnames from "classnames";
 
 import { relative } from "path";
 import { SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION } from "constants";
 
 export default class extends Page {
+  constructor(props) {
+    super(props);
+
+    this.toggle = this.toggle.bind(this);
+    this.state = {
+      activeTab: "1"
+    };
+  }
+
+  toggle(tab) {
+    if (this.state.activeTab !== tab) {
+      this.setState({
+        activeTab: tab
+      });
+    }
+  }
   render() {
     return (
       <Layout {...this.props} navmenu={false} container={false}>
@@ -61,28 +95,79 @@ export default class extends Page {
         </div>
         <div className="cont">
           <div className="coin">
-            <Table borderless className="tab">
-              <thead>
-                <tr>
-                  <th className="headNumber">이름</th>
-                  <th className="headTitle">시가</th>
-                  <th className="headWriter">거래량</th>
-                  <th className="headDate">변동률%</th>
-                </tr>
-              </thead>
-            </Table>
-            <Table borderless>
-              <thead>
-                <tr>
-                  <th className="headNumber">
-                    <img src="static/img/star.png" /> 이름
-                  </th>
-                  <th className="headTitle">시가</th>
-                  <th className="headWriter">거래량</th>
-                  <th className="headDate">변동률%</th>
-                </tr>
-              </thead>
-            </Table>
+            <div className="sise">
+              <span>시세</span>
+            </div>{" "}
+            <div>
+              <Nav tabs>
+                <NavItem>
+                  <NavLink
+                    className={classnames({ active: this.state.activeTab === "1" })}
+                    onClick={() => {
+                      this.toggle("1");
+                    }}
+                  >
+                    KRW
+                  </NavLink>
+                </NavItem>
+                <NavItem>
+                  <NavLink
+                    className={classnames({ active: this.state.activeTab === "2" })}
+                    onClick={() => {
+                      this.toggle("2");
+                    }}
+                  >
+                    <img src="static/img/star.png" />
+                  </NavLink>
+                </NavItem>
+              </Nav>
+              <TabContent activeTab={this.state.activeTab}>
+                <TabPane tabId="1">
+                  <Row>
+                    <Col sm="12">
+                      <Table borderless className="tab">
+                        <thead>
+                          <tr>
+                            <th className="headNumber">이름</th>
+                            <th className="headTitle">시가</th>
+                            <th className="headWriter">거래량</th>
+                            <th className="headDate">변동률%</th>
+                          </tr>
+                        </thead>
+                      </Table>
+                      <Table borderless>
+                        <thead>
+                          <tr>
+                            <th className="headNumber">
+                              <img src="static/img/star.png" /> 이름
+                            </th>
+                            <th className="headTitle">시가</th>
+                            <th className="headWriter">거래량</th>
+                            <th className="headDate">변동률%</th>
+                          </tr>
+                        </thead>
+                      </Table>
+                    </Col>
+                  </Row>
+                </TabPane>
+                <TabPane tabId="2">
+                  <Row>
+                    <Col sm="6" />
+                    <Col sm="6" />
+                  </Row>
+                </TabPane>
+              </TabContent>
+            </div>
+            <div className="input_search">
+              <InputGroup>
+                <Input />
+                <InputGroupAddon addonType="append">
+                  <InputGroupText>
+                    <img src="static/img/search.png" />
+                  </InputGroupText>
+                </InputGroupAddon>
+              </InputGroup>
+            </div>
           </div>
 
           <div className="sixweeks_story">
