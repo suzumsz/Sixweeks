@@ -1,5 +1,50 @@
 #board {
-  .title {
-    background-color: red;
+  .body {
+    margin-top: 50px;
+    margin-left: 150px;
+  }
+  .body-title {
+    padding: 30px;
+    padding-left: 0px;
+  }
+  .body-QA {
+    padding: 20px;
+    padding-left: 0px;
+    border-bottom: 1px solid blue;
+  }
+  .headTitle {
+    width: 300px;
+  }
+  .tableNumber {
+    width: 258px;
+    padding-right: 0px;
+  }
+  .tableTitle {
+    width: 400px;
+    padding: 12px;
+    padding-left: 0px;
+  }
+  .tableName {
+    width: 270px;
+    padding: 12px;
+  }
+  .tableDate {
+    width: 259px;
+    padding: 12px;
+  }
+  .HomeButton {
+    float: left;
+    width: 155px;
+  }
+  .WriteButton {
+    float: right;
+    width: 155px;
+  }
+  .PagingLink {
+    display: inline-block;
+    margin-left: 250px;
+  }
+  .bottom {
+    margin-top: 50px;
   }
 }
