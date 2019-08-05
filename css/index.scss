@@ -9,6 +9,7 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "board.scss";
 @import "login.scss";
 @import "signup.scss";
+@import "opinion.scss";
 
 * {
   list-style: none;
@@ -20,8 +21,6 @@ body {
 }
 .container {
   min-width: 1366px;
-}
-.more {
 }
 
 .board_2 {
@@ -80,15 +79,7 @@ body {
   height: 40px;
   margin: 0 auto;
 }
-.board_box {
-  width: 950px;
-  height: 695px;
-  border: solid 1px #bcbcbc;
-}
-.write {
-  border-bottom: solid 2.5px #0d4f9b;
-  width: 65px;
-}
+
 .board {
   margin-right: 20px;
 }

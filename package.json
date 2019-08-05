@@ -43,6 +43,7 @@
     "react-transition-group": "^2.5.1",
     "reactstrap": "^6.5.0",
     "sass-loader": "^7.1.0",
+    "tui-editor": "^1.4.5",
     "universal-cookie": "^3.0.7"
   },
   "devDependencies": {

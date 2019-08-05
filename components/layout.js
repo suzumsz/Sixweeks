@@ -293,9 +293,8 @@ export class SigninModal extends React.Component {
     };
 
     login(user).then(res => {
-      if (res) {
-        this.props.history.push("/profile");
-      }
+      console.log("로그인 성공");
+      path = profile;
     });
   }
 
