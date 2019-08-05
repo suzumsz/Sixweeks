@@ -22,6 +22,9 @@ body {
 .container {
   min-width: 1366px;
 }
+.tab {
+  border-bottom: solid 1px #bcbcbc;
+}
 
 .board_2 {
   margin-left: 20px;
@@ -138,7 +141,7 @@ body {
 .coin {
   width: 1080px;
   height: 743px;
-  border: solid 1px #bcbcbc;
+
   margin-top: 200px;
   margin-left: 75px;
 }
