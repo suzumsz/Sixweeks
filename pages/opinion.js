@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+//import "./write.html";
 import { Col, Row, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 class Opinion extends React.Component {
   render() {

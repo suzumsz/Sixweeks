@@ -1,5 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
+import Board from "./board";
 
 class NewBoard extends React.Component {
   state = {
@@ -25,16 +26,18 @@ class NewBoard extends React.Component {
 
     return (
       <Layout>
-        {this.state.show
-          ? this.state.show.map(user => (
-              <li key={user.number}>
-                {user.number}
-                {user.name}
-                {user.title}
-                {user.content}
-              </li>
-            ))
-          : ""}
+        <Board>
+          {this.state.show
+            ? this.state.show.map(user => (
+                <li key={user.number}>
+                  {user.number}
+                  {user.name}
+                  {user.title}
+                  {user.content}
+                </li>
+              ))
+            : ""}
+        </Board>
       </Layout>
     );
   }
