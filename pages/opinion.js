@@ -83,7 +83,7 @@ class Opinion extends React.Component {
               />
             </FormGroup>
             <Button outline color="primary">
-              <a href="../board">목록</a>
+              <a href="./newboard">목록</a>
             </Button>{" "}
             <Button outline color="secondary">
               게시

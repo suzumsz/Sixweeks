@@ -33,30 +33,32 @@ class NewBoard extends Component {
               <h2>게시판</h2>
             </div>
             <h4 className="body-QA">Q&A</h4>
-            <Table borderless>
-              <thead>
-                <tr>
-                  <th className="headNumber"> 번호</th>
-                  <th className="headTitle">제목</th>
-                  <th className="headWriter">작성자</th>
-                  <th className="headDate">날짜</th>
-                </tr>
-              </thead>
-            </Table>
-            <div>
-              {this.state.board
-                ? this.state.board.map(c => {
-                    return (
-                      <Board
-                        key={c.number}
-                        number={c.number}
-                        title={c.title}
-                        name={c.name}
-                        write_date={c.write_date}
-                      />
-                    );
-                  })
-                : ""}
+            <div className="body-table">
+              <Table borderless>
+                <thead>
+                  <tr>
+                    <th className="headNumber"> 번호</th>
+                    <th className="headTitle">제목</th>
+                    <th className="headWriter">작성자</th>
+                    <th className="headDate">날짜</th>
+                  </tr>
+                </thead>
+              </Table>
+              <div className="board-name">
+                {this.state.board
+                  ? this.state.board.map(c => {
+                      return (
+                        <Board
+                          key={c.number}
+                          number={c.number}
+                          title={c.title}
+                          name={c.name}
+                          write_date={c.write_date}
+                        />
+                      );
+                    })
+                  : ""}
+              </div>
             </div>
             <div className="bottom">
               <Pagination size="" aria-label="Page navigation example" className="PagingLink">
