@@ -292,10 +292,11 @@ export class SigninModal extends React.Component {
       password: this.state.password
     };
 
-    login(user).then(res => {
-      console.log("로그인 성공");
-      path = profile;
-    });
+    login(user)
+      .then(res => {})
+      .catch(err => {
+        console.log(err);
+      });
   }
 
   render() {
