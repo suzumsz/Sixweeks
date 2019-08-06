@@ -100,10 +100,18 @@ export default class extends React.Component {
             <Nav navbar>
               <div tabIndex="1" className="dropdown nojs-dropdown">
                 <div className="nav-item">
-                  <span className="dropdo">거래소</span>
-                  <span className="dropdo">입출금</span>
-                  <span className="dropdo">투자내역</span>
-                  <span className="dropdo">고객센터</span>
+                  <span className="dropdo">
+                    <a href="#">거래소</a>
+                  </span>
+                  <span className="dropdo">
+                    <a href="#">입출금</a>
+                  </span>
+                  <span className="dropdo">
+                    <a href="#">투자내역</a>
+                  </span>
+                  <span className="dropdo">
+                    <a href="#">고객센터</a>
+                  </span>
                 </div>
               </div>
             </Nav>
