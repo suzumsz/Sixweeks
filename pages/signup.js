@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/layout";
 import { register } from "../components/userFunction";
+import { email } from "../components/userFunction";
 import Profile from "../components/profile";
 
 class Signup extends React.Component {
@@ -19,6 +20,7 @@ class Signup extends React.Component {
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
@@ -38,6 +40,18 @@ class Signup extends React.Component {
     };
 
     register(user).then(res => {
+      if (res) {
+        this.props.history.push(`../components/profile`);
+      }
+    });
+  }
+
+  handleSubmit(e) {
+    e.preventDefault();
+    const mail = {
+      email: this.state.email
+    };
+    email(mail).then(res => {
       if (res) {
         this.props.history.push(`../components/profile`);
       }
@@ -127,7 +141,13 @@ class Signup extends React.Component {
                     onChange={this.onChange}
                   />
                 </div>
-                <button type="submit" className="btn btn-primary">
+                <button
+                  type="submit"
+                  className="btn btn-primary"
+                  name="email"
+                  value={this.state.email}
+                  handleSubmit={this.handleSubmit}
+                >
                   인증하기
                 </button>
               </div>

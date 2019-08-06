@@ -47,3 +47,16 @@ export const write = note => {
       console.log(err);
     });
 };
+
+export const email = auth => {
+  return axios
+    .post("http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/email", {
+      email: auth.email
+    })
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
