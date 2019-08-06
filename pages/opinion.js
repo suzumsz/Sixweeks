@@ -1,6 +1,5 @@
 import React from "react";
 import Layout from "../components/layout";
-
 import { write } from "../components/userFunction";
 
 import { Col, Row, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";

@@ -60,3 +60,14 @@ export const email = auth => {
       console.log(err);
     });
 };
+
+export const edit = editor => {
+  return axios
+    .get("http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/edit")
+    .then(res => {
+      console.log(res);
+    })
+    .catch(err => {
+      console.log(err);
+    });
+};
