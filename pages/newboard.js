@@ -82,7 +82,7 @@ class NewBoard extends Component {
                 <a href="./index">홈으로</a>
               </Button>{" "}
               <Button outline color="secondary" className="WriteButton">
-                <a href="./opinion">글쓰기</a>
+                <a href="./ssr-test">글쓰기</a>
               </Button>{" "}
             </div>
           </div>
