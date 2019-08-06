@@ -12,6 +12,12 @@
     padding-left: 0px;
     border-bottom: 1px solid blue;
   }
+  .body-table {
+    margin-left: 10px;
+  }
+  .board-name {
+    margin-left: 20px;
+  }
   .headTitle {
     width: 300px;
   }
@@ -21,16 +27,23 @@
   }
   .tableTitle {
     width: 400px;
-    padding: 12px;
+    padding: 12 px;
+    padding-left: 0px;
+  }
+  .headDate {
+    width: 109px;
+    padding-left: 0px;
+  }
+  .headWriter {
     padding-left: 0px;
   }
   .tableName {
-    width: 270px;
-    padding: 12px;
+    width: 250px;
+    padding-left: 0px;
   }
   .tableDate {
-    width: 259px;
-    padding: 12px;
+    width: 159px;
+    padding-left: 30px;
   }
   .HomeButton {
     float: left;
