@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
+
 import {
   Table,
   InputGroup,
@@ -141,18 +142,8 @@ export default class extends Page {
                             </tr>
                           </thead>
                         </Table>
-                        <Table borderless>
-                          <thead>
-                            <tr>
-                              <th className="headNumber">
-                                <img src="static/img/star.png" /> 이름
-                              </th>
-                              <th className="headTitle">시가</th>
-                              <th className="headWriter">거래량</th>
-                              <th className="headDate">변동률%</th>
-                            </tr>
-                          </thead>
-                        </Table>
+
+                        <Table borderless />
                       </Col>
                     </Row>
                   </TabPane>
@@ -162,14 +153,6 @@ export default class extends Page {
                       <Col sm="6" />
                       <Table borderless>
                         <thead>
-                          <tr>
-                            <th className="headNumber">
-                              <img src="static/img/star.png" /> 이름
-                            </th>
-                            <th className="headTitle">시가</th>
-                            <th className="headWriter">거래량</th>
-                            <th className="headDate">변동률%</th>
-                          </tr>
                           <tr>
                             <th className="headNumber">
                               <img src="static/img/star.png" /> 이름
