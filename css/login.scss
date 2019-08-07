@@ -2,17 +2,20 @@
   text-align: center;
   height: 920px;
   // background-color: yellow;
-
+  p {
+    color: #959798;
+  }
   .logimg {
     margin-bottom: 10px;
     margin-top: 120px;
   }
   .site {
-    border: solid 1px #000000;
+    background: rgba(149, 151, 152, 0.2);
     border-radius: 7px;
     width: 400px;
     margin-left: 170px;
     margin-bottom: 50px;
+    color: #343638;
   }
   .site img {
     margin-right: 5px;
@@ -23,12 +26,17 @@
     margin-left: 35px;
     margin-top: 30px;
   }
-  .custom-control-label {
+  #memory {
     margin-left: 15px;
     margin-top: 20px;
+    color: #959798;
+    cursor: pointer;
   }
   .findid {
     margin-left: 155px;
+    a {
+      color: #959798;
+    }
   }
 
   .lobtn {
@@ -37,7 +45,21 @@
     margin-top: 42px;
     margin-right: 30px;
     margin-left: 30px;
+    background-color: #0d4f9b;
+    border: none;
   }
+  .lobtn:hover {
+    background: rgba(13, 79, 155, 0.9);
+  }
+  .lobtn1 {
+    width: 185px;
+    height: 50px;
+    margin-top: 42px;
+    margin-right: 30px;
+    margin-left: 30px;
+    line-height: 31px;
+  }
+
   .naver-btn {
     border-radius: 3px;
     border: none;
@@ -46,14 +68,25 @@
     background-color: #36c027;
     cursor: pointer;
     margin-top: 70px;
+    color: #ffffff;
+    font-weight: bold;
+    img {
+      margin-top: -5px;
+    }
   }
   .google-btn {
     border-radius: 3px;
-    border: solid 1px #000000;
+    border: solid 1px #343638;
     width: 435px;
     height: 50px;
     background-color: #ffffff;
     cursor: pointer;
     margin-top: 15px;
+    font-weight: bold;
+    color: #707070;
+    img {
+      margin-top: -5px;
+      margin-right: 5px;
+    }
   }
 }

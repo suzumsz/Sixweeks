@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
+
 import {
   Table,
   InputGroup,
@@ -74,11 +75,8 @@ export default class extends Page {
               </h1>
 
               <p className="text-right">
-                <a
-                  href="https://github.com/iaincollins/nextjs-starter"
-                  className="btn btn-outline-light btn-lg"
-                >
-                  <span className="more" /> 더 알아보기
+                <a href="https://github.com/SUJEONG2YA/sixweeks">
+                  <div className="more"> 더 알아보기</div>
                 </a>
               </p>
             </Container>{" "}

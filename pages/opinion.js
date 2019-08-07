@@ -1,8 +1,6 @@
 import React from "react";
 import Layout from "../components/layout";
-
 import { write } from "../components/userFunction";
-
 import { Col, Row, Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
 
 class Opinion extends React.Component {
@@ -41,11 +39,11 @@ class Opinion extends React.Component {
       <Layout>
         <div className="body">
           <div className="title">
-            <h3>게시판</h3>
+            <h2>게시판</h2>
           </div>
           <div className="board_box">
             <div className="write">
-              <h5>글쓰기</h5>
+              <h4>글쓰기</h4>
             </div>
 
             <form onSubmit={this.onSubmit}>
@@ -85,10 +83,10 @@ class Opinion extends React.Component {
                   />
                 </div>
               </FormGroup>
-              <Button className="opinibtn" id="btn1" outline color="primary">
-                <a href="./newboard">목록</a>
+              <Button className="opinibtn" id="btn1" outline color="secondary" href="./newboard">
+                목록
               </Button>{" "}
-              <Button className="opinibtn" id="btn2" outline color="secondary">
+              <Button className="opinibtn" id="btn2" outline color="primary">
                 게시
               </Button>{" "}
             </form>

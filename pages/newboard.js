@@ -32,6 +32,7 @@ class NewBoard extends Component {
             <div className="body-title">
               <h2>게시판</h2>
             </div>
+
             <h4 className="body-QA">Q&A</h4>
             <div className="body-table">
               <Table borderless>
@@ -78,11 +79,11 @@ class NewBoard extends Component {
                   <PaginationLink next href="#" />
                 </PaginationItem>
               </Pagination>
-              <Button outline color="primary" className="HomeButton">
-                <a href="./index">홈으로</a>
+              <Button outline color="secondary" className="HomeButton" href="./index">
+                홈으로
               </Button>{" "}
-              <Button outline color="secondary" className="WriteButton">
-                <a href="./opinion">글쓰기</a>
+              <Button outline color="primary" className="WriteButton" href="./opinion">
+                글쓰기
               </Button>{" "}
             </div>
           </div>

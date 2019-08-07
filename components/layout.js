@@ -315,7 +315,7 @@ export class SigninModal extends React.Component {
         <ModalBody className="ModalBody">
           <div id="logi">
             <img className="logimg" src="static/img/sixweekslogin.png" />
-            <p>로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
+            <p className="logcheck">로그인하는 사이트의 주소가 아래와 같은지 확인하세요</p>
             <p className="site">
               <img src="static/img/lock.png" />
               https://www.SIXWEEKS.com
@@ -356,7 +356,11 @@ export class SigninModal extends React.Component {
                     className="custom-control-input"
                     id="customControlAutosizing"
                   />
-                  <label className="custom-control-label" htmlFor="customControlAutosizing">
+                  <label
+                    className="custom-control-label"
+                    htmlFor="customControlAutosizing"
+                    id="memory"
+                  >
                     비밀번호저장
                   </label>
                   <span className="findid">
@@ -367,8 +371,8 @@ export class SigninModal extends React.Component {
               <Button className="lobtn" color="primary">
                 Login
               </Button>{" "}
-              <Button className="lobtn" outline color="secondary">
-                <a href="../signup">Sign up</a>
+              <Button className="lobtn1" outline color="secondary" href="../signup">
+                Sign up
               </Button>{" "}
             </form>
             <button type="button" className="naver-btn">

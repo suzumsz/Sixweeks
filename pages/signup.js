@@ -143,7 +143,7 @@ class Signup extends React.Component {
                 </div>
                 <button
                   type="submit"
-                  className="btn btn-primary"
+                  className="checkbtn"
                   name="email"
                   value={this.state.email}
                   handleSubmit={this.handleSubmit}
@@ -223,11 +223,13 @@ class Signup extends React.Component {
                   </label>
                 </div>
 
-                <button type="submit" id="signub" className="btn btn-primary">
+                <button type="submit" className="signupbtn">
                   Sign up
                 </button>
                 <div>
-                  이미 계정이 있습니까? <a href="#">로그인</a>
+                  <p>
+                    이미 계정이 있습니까? <a href="#">로그인</a>
+                  </p>
                 </div>
               </div>
             </form>
