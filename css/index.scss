@@ -24,7 +24,6 @@ body {
   //background: rgba(188, 224, 253, 0.5);
   min-width: 1366px;
 }
-
 .container {
   min-width: 1366px;
 }
@@ -36,9 +35,13 @@ body {
   width: 1366px;
   height: 1000px;
 }
-
+.navv {
+  cursor: pointer;
+}
 .sise_group {
   width: 1130px;
+  height: 4610px;
+  text-align: center;
 }
 .sise {
   width: 65px;
@@ -181,7 +184,7 @@ body {
 .sixweeks_story {
   width: 1245px;
   height: 500px;
-  margin-top: 50px;
+  margin-top: 3980px;
   margin-left: 140px;
   margin-bottom: 50px;
 }
