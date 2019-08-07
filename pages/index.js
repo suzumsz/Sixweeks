@@ -116,14 +116,16 @@ export default class extends Page {
                     </div>
                   </NavItem>
                   <NavItem>
-                    <NavLink
-                      className={classnames({ active: this.state.activeTab === "2" })}
-                      onClick={() => {
-                        this.toggle("2");
-                      }}
-                    >
-                      <img src="static/img/star.png" />
-                    </NavLink>
+                    <div className="navv">
+                      <NavLink
+                        className={classnames({ active: this.state.activeTab === "2" })}
+                        onClick={() => {
+                          this.toggle("2");
+                        }}
+                      >
+                        <img src="static/img/star.png" />
+                      </NavLink>
+                    </div>
                   </NavItem>
                 </Nav>
                 <TabContent activeTab={this.state.activeTab}>
