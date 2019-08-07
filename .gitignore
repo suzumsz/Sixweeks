@@ -1,4 +1,9 @@
 node_modules
 sixweeks
+<<<<<<< HEAD
 next
 .next
+=======
+.next
+next
+>>>>>>> 4de532b0f91ebae22ca7b0e6cf8e7d1017f79eb0
