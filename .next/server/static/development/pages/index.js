@@ -244,7 +244,7 @@ var _package__WEBPACK_IMPORTED_MODULE_14___namespace = /*#__PURE__*/__webpack_re
 /* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../css/index.scss */ "./css/index.scss");
 /* harmony import */ var _css_index_scss__WEBPACK_IMPORTED_MODULE_15___default = /*#__PURE__*/__webpack_require__.n(_css_index_scss__WEBPACK_IMPORTED_MODULE_15__);
 
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\components\\layout.js";
+var _jsxFileName = "D:\\work\\sixweeks\\components\\layout.js";
 
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
@@ -1308,7 +1308,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! next-auth/client */ "next-auth/client");
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(next_auth_client__WEBPACK_IMPORTED_MODULE_3__);
 
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\components\\page.js";
+var _jsxFileName = "D:\\work\\sixweeks\\components\\page.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1411,12 +1411,14 @@ function (_React$Component) {
                 return _context.stop();
             }
           }
-        }, _callee, this);
+        }, _callee);
       }));
 
-      return function getInitialProps(_x) {
+      function getInitialProps(_x) {
         return _getInitialProps.apply(this, arguments);
-      };
+      }
+
+      return getInitialProps;
     }()
   }]);
 
@@ -1440,7 +1442,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! jwt-decode */ "jwt-decode");
 /* harmony import */ var jwt_decode__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(jwt_decode__WEBPACK_IMPORTED_MODULE_1__);
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\components\\profile.js";
+var _jsxFileName = "D:\\work\\sixweeks\\components\\profile.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1530,7 +1532,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var universal_cookie__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(universal_cookie__WEBPACK_IMPORTED_MODULE_3__);
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! next-auth/client */ "next-auth/client");
 /* harmony import */ var next_auth_client__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_auth_client__WEBPACK_IMPORTED_MODULE_4__);
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\components\\signin.js";
+var _jsxFileName = "D:\\work\\sixweeks\\components\\signin.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -1544,11 +1546,11 @@ function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) ===
 
 function _getPrototypeOf(o) { _getPrototypeOf = Object.setPrototypeOf ? Object.getPrototypeOf : function _getPrototypeOf(o) { return o.__proto__ || Object.getPrototypeOf(o); }; return _getPrototypeOf(o); }
 
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, writable: true, configurable: true } }); if (superClass) _setPrototypeOf(subClass, superClass); }
 
 function _setPrototypeOf(o, p) { _setPrototypeOf = Object.setPrototypeOf || function _setPrototypeOf(o, p) { o.__proto__ = p; return o; }; return _setPrototypeOf(o, p); }
-
-function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
 
 
 
@@ -1573,8 +1575,8 @@ function (_React$Component) {
       providers: _this.props.providers,
       submitting: false
     };
-    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_assertThisInitialized(_this)));
-    _this.handleEmailChange = _this.handleEmailChange.bind(_assertThisInitialized(_assertThisInitialized(_this)));
+    _this.handleSubmit = _this.handleSubmit.bind(_assertThisInitialized(_this));
+    _this.handleEmailChange = _this.handleEmailChange.bind(_assertThisInitialized(_this));
     return _this;
   }
 
@@ -1825,7 +1827,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react_data_table_component__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! react-data-table-component */ "react-data-table-component");
 /* harmony import */ var react_data_table_component__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(react_data_table_component__WEBPACK_IMPORTED_MODULE_8__);
 
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\components\\ssr-test.js";
+var _jsxFileName = "D:\\work\\sixweeks\\components\\ssr-test.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -2143,7 +2145,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! react */ "react");
 /* harmony import */ var react__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _coinName__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./coinName */ "./components/coinName.js");
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\components\\tableSetting.js";
+var _jsxFileName = "D:\\work\\sixweeks\\components\\tableSetting.js";
 
 
 /* Theme Setting */
@@ -2350,7 +2352,7 @@ module.exports = "@charset \"UTF-8\";\n/*!\n  Ionicons, v3.0.0-alpha.3\n  Create
 /*! exports provided: name, version, description, author, license, repository, main, dependencies, devDependencies, optionalDependencies, scripts, engines, proxy, default */
 /***/ (function(module) {
 
-module.exports = {"name":"nextjs-starter","version":"7.0.2","description":"A starter Next.js project with email and oAuth authentication","author":"Iain Collins <me@iaincollins.com>","license":"ISC","repository":"https://github.com/iaincollins/nextjs-starter.git","main":"index.js","dependencies":{"@ckeditor/ckeditor5-build-classic":"^12.3.1","@ckeditor/ckeditor5-react":"^1.1.3","@material-ui/core":"^4.3.0","axios":"^0.19.0","babel-core":"^6.26.3","babel-plugin-wrap-in-js":"^1.1.1","body-parser":"^1.19.0","bootstrap":"^4.1.3","connect-mongo":"^2.0.3","cors":"^2.8.5","dotenv":"^6.2.0","express":"^4.17.1","express-session":"^1.15.5","ionicons":"^4.5.1","isomorphic-fetch":"^2.2.1","isomorphic-unfetch":"^3.0.0","jquery":"^3.2.1","jwt-decode":"^2.2.0","mongodb":"^3.1.10","nedb":"^1.8.0","next":"^7.0.2","next-auth":"^1.12.1","node-sass":"^4.11.0","nodemailer":"^4.7.0","nodemailer-direct-transport":"^3.3.2","nodemailer-smtp-transport":"^2.7.4","passport-facebook":"^2.1.1","passport-google-oauth":"^1.0.0","passport-twitter":"^1.0.4","popper.js":"^1.14.6","raw-loader":"^0.5.1","react":"^16.8.6","react-bootstrap-table":"^4.3.1","react-data-table-component":"^2.1.1","react-dom":"^16.8.6","react-router-dom":"^5.0.1","react-syntax-highlighter":"^10.1.2","react-transition-group":"^2.5.1","reactstrap":"^6.5.0","sass-loader":"^7.1.0","socket.io":"^2.2.0","styled-components":"^4.3.2","tui-editor":"^1.4.5","universal-cookie":"^3.0.7"},"devDependencies":{"cross-env":"^5.1.6"},"optionalDependencies":{"fsevents":"*"},"scripts":{"dev":"cross-env NODE_ENV=development PORT=3000 node index.js","build":"next build","start":"node index.js","postinstall":"next build"},"engines":{"node":"8.11.x"},"proxy":"http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/"};
+module.exports = {"name":"nextjs-starter","version":"7.0.2","description":"A starter Next.js project with email and oAuth authentication","author":"Iain Collins <me@iaincollins.com>","license":"ISC","repository":"https://github.com/iaincollins/nextjs-starter.git","main":"index.js","dependencies":{"@ckeditor/ckeditor5-build-classic":"^12.3.1","@ckeditor/ckeditor5-react":"^1.1.3","@material-ui/core":"^4.3.0","axios":"^0.19.0","babel-core":"^6.26.3","babel-plugin-wrap-in-js":"^1.1.1","body-parser":"^1.19.0","bootstrap":"^4.1.3","connect-mongo":"^2.0.3","cors":"^2.8.5","dotenv":"^6.2.0","express":"^4.17.1","express-session":"^1.15.5","ionicons":"^4.5.1","isomorphic-fetch":"^2.2.1","isomorphic-unfetch":"^3.0.0","jquery":"^3.2.1","jwt-decode":"^2.2.0","mongodb":"^3.1.10","nedb":"^1.8.0","next":"^7.0.2","next-auth":"^1.12.1","node-sass":"^4.11.0","nodemailer":"^4.7.0","nodemailer-direct-transport":"^3.3.2","nodemailer-smtp-transport":"^2.7.4","passport-facebook":"^2.1.1","passport-google-oauth":"^1.0.0","passport-twitter":"^1.0.4","popper.js":"^1.14.6","raw-loader":"^0.5.1","react":"^16.7.0","react-bootstrap-table":"^4.3.1","react-data-table-component":"^2.1.1","react-dom":"^16.7.0","react-router-dom":"^5.0.1","react-syntax-highlighter":"^10.1.2","react-transition-group":"^2.5.1","reactstrap":"^6.5.0","sass-loader":"^7.1.0","socket.io":"^2.2.0","styled-components":"^4.3.2","tui-editor":"^1.4.5","universal-cookie":"^3.0.7"},"devDependencies":{"cross-env":"^5.1.6"},"optionalDependencies":{"fsevents":"*"},"scripts":{"dev":"cross-env NODE_ENV=development PORT=3000 node index.js","build":"next build","start":"node index.js","postinstall":"next build"},"engines":{"node":"8.11.x"},"proxy":"http://ec2-13-125-250-20.ap-northeast-2.compute.amazonaws.com/"};
 
 /***/ }),
 
@@ -2368,7 +2370,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_2__);
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\pages\\board.js";
+var _jsxFileName = "D:\\work\\sixweeks\\pages\\board.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -2499,7 +2501,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var path__WEBPACK_IMPORTED_MODULE_7___default = /*#__PURE__*/__webpack_require__.n(path__WEBPACK_IMPORTED_MODULE_7__);
 /* harmony import */ var constants__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! constants */ "constants");
 /* harmony import */ var constants__WEBPACK_IMPORTED_MODULE_8___default = /*#__PURE__*/__webpack_require__.n(constants__WEBPACK_IMPORTED_MODULE_8__);
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\pages\\index.js";
+var _jsxFileName = "D:\\work\\sixweeks\\pages\\index.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -3448,7 +3450,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_userFunction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/userFunction */ "./components/userFunction.js");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! reactstrap */ "reactstrap");
 /* harmony import */ var reactstrap__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(reactstrap__WEBPACK_IMPORTED_MODULE_3__);
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\pages\\opinion.js";
+var _jsxFileName = "D:\\work\\sixweeks\\pages\\opinion.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 
@@ -3691,7 +3693,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _components_layout__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/layout */ "./components/layout.js");
 /* harmony import */ var _components_userFunction__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/userFunction */ "./components/userFunction.js");
 /* harmony import */ var _components_profile__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/profile */ "./components/profile.js");
-var _jsxFileName = "C:\\Users\\infomax\\Desktop\\project\\sixweeks\\pages\\signup.js";
+var _jsxFileName = "D:\\work\\sixweeks\\pages\\signup.js";
 
 function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
 

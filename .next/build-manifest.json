@@ -19,6 +19,10 @@
       "static/runtime/webpack.js",
       "static/runtime/main.js"
     ],
+    "/newboard": [
+      "static/runtime/webpack.js",
+      "static/runtime/main.js"
+    ],
     "/": [
       "static/runtime/webpack.js",
       "static/runtime/main.js"
