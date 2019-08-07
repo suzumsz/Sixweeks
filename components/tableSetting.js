@@ -32,10 +32,12 @@ const darkTheme = {
 /* Columns Setting */
 const columns = [
   {
+    className: "columnsCSS",
     selector: "key",
     sortable: true,
     ignoreRowClick: true,
-    width: "20%",
+    width: "27%",
+
     cell: row => {
       function getKeyByValue(object, row) {
         // Data from coinName.js Object
@@ -55,6 +57,7 @@ const columns = [
     }
   },
   {
+    className: "priceName",
     selector: "Price",
     sortable: true,
     ignoreRowClick: true,
@@ -69,12 +72,14 @@ const columns = [
         return (
           <div className="minus">
             {row.FluctateRate}% ({row.FluctateRate24}원)
+            <img src="../static/img/play.png" />
           </div>
         );
       } else if (row.FluctateRate >= 0) {
         return (
           <div className="plus">
             +{row.FluctateRate}% (+{row.FluctateRate24}원)
+            <img src="../static/img/up.png" />
           </div>
         );
       }
@@ -90,12 +95,14 @@ const columns = [
         return (
           <div className="minus">
             {row.premium}% ({row.premiumGap}원)
+            <img src="../static/img/play.png" />
           </div>
         );
       } else {
         return (
           <div className="plus">
             +{row.premium}% (+{row.premiumGap}원)
+            <img src="../static/img/up.png" />
           </div>
         );
       }
