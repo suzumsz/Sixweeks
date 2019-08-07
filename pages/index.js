@@ -74,11 +74,11 @@ export default class extends Page {
                 </span>
               </h1>
 
-              <p className="text-right">
+              <div className="text-right">
                 <a href="https://github.com/SUJEONG2YA/sixweeks">
                   <div className="more"> 더 알아보기</div>
                 </a>
-              </p>
+              </div>
             </Container>{" "}
           </div>
 
