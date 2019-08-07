@@ -32,10 +32,12 @@ const darkTheme = {
 /* Columns Setting */
 const columns = [
   {
+    className: "columnsCSS",
     selector: "key",
     sortable: true,
     ignoreRowClick: true,
-    width: "20%",
+    width: "27%",
+
     cell: row => {
       function getKeyByValue(object, row) {
         // Data from coinName.js Object
@@ -55,6 +57,7 @@ const columns = [
     }
   },
   {
+    className: "priceName",
     selector: "Price",
     sortable: true,
     ignoreRowClick: true,
