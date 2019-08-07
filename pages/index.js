@@ -3,6 +3,7 @@ import React from "react";
 import { Container, Jumbotron, ListGroup, ListGroupItem } from "reactstrap";
 import Page from "../components/page";
 import Layout from "../components/layout";
+import SSRTEST from "../components/ssr-test";
 
 import {
   Table,
@@ -74,14 +75,11 @@ export default class extends Page {
                 </span>
               </h1>
 
-              <p className="text-right">
-                <a
-                  href="https://github.com/iaincollins/nextjs-starter"
-                  className="btn btn-outline-light btn-lg"
-                >
-                  <span className="more" /> 더 알아보기
+              <div className="text-right">
+                <a href="https://github.com/SUJEONG2YA/sixweeks">
+                  <div className="more"> 더 알아보기</div>
                 </a>
-              </p>
+              </div>
             </Container>{" "}
           </div>
 
@@ -137,12 +135,12 @@ export default class extends Page {
                             <tr>
                               <th className="headNumber">이름</th>
                               <th className="headTitle">시가</th>
-                              <th className="headWriter">거래량</th>
-                              <th className="headDate">변동률%</th>
+                              <th className="headWriter">변동률%</th>
+                              <th className="headDate">거래량</th>
                             </tr>
                           </thead>
                         </Table>
-
+                        <SSRTEST />
                         <Table borderless />
                       </Col>
                     </Row>
@@ -158,8 +156,8 @@ export default class extends Page {
                               <img src="static/img/star.png" /> 이름
                             </th>
                             <th className="headTitle">시가</th>
-                            <th className="headWriter">거래량</th>
-                            <th className="headDate">변동률%</th>
+                            <th className="headWriter">변동률%</th>
+                            <th className="headDate">거래량</th>
                           </tr>
                         </thead>
                       </Table>
@@ -167,7 +165,8 @@ export default class extends Page {
                   </TabPane>
                 </TabContent>
               </div>
-              <div className="input_search">
+
+              {/*   <div className="input_search">
                 <InputGroup>
                   <Input />
                   <InputGroupAddon addonType="append">
@@ -177,6 +176,7 @@ export default class extends Page {
                   </InputGroupAddon>
                 </InputGroup>
               </div>
+                    */}
             </div>
           </div>
 

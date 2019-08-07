@@ -10,10 +10,11 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 @import "login.scss";
 @import "signup.scss";
 @import "opinion.scss";
-
+@import "https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap";
 * {
   list-style: none;
   text-decoration: none;
+  font-family: "Nanum Gothic", sans-serif;
 }
 a {
   color: #343638;
@@ -35,6 +36,7 @@ body {
   width: 1366px;
   height: 1000px;
 }
+
 .sise_group {
   width: 1130px;
 }
@@ -47,14 +49,14 @@ body {
   color: #ffffff;
   float: left;
 }
-.input_search {
+/*.input_search {
   width: 300px;
   height: 40px;
   position: absolute;
   z-index: 20;
   margin-top: -175px;
   margin-left: 830px;
-}
+}*/
 .tab {
   border-bottom: solid 1px #bcbcbc;
 }
@@ -223,8 +225,18 @@ body {
 }
 
 .text-right {
-  margin-right: 590px;
+  margin-left: 590px;
   margin-top: -150px;
+  background-color: #ffffff;
+  width: 150px;
+  height: 50px;
+  border-radius: 10px;
+}
+.more {
+  color: #343638;
+  text-align: center;
+  line-height: 50px;
+  font-weight: bold;
 }
 
 #__next {

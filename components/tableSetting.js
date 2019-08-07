@@ -32,7 +32,6 @@ const darkTheme = {
 /* Columns Setting */
 const columns = [
   {
-    name: "Coin Name",
     selector: "key",
     sortable: true,
     ignoreRowClick: true,
@@ -56,14 +55,12 @@ const columns = [
     }
   },
   {
-    name: "Current Price",
     selector: "Price",
     sortable: true,
     ignoreRowClick: true,
     width: "20%"
   },
   {
-    name: "24Hours Fluctate",
     selector: "FluctateRate",
     sortable: true,
     ignoreRowClick: true,
@@ -85,7 +82,7 @@ const columns = [
   },
   {
     /* KRW-USD premium */
-    name: "Ko.Premium",
+
     selector: "premium",
     sortable: true,
     cell: row => {

@@ -20,7 +20,7 @@ class Signup extends React.Component {
 
     this.onChange = this.onChange.bind(this);
     this.onSubmit = this.onSubmit.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
+    //this.handleSubmit = this.handleSubmit.bind(this);
   }
   onChange(e) {
     this.setState({ [e.target.name]: e.target.value });
@@ -46,7 +46,7 @@ class Signup extends React.Component {
     });
   }
 
-  handleSubmit(e) {
+  /* handleSubmit(e) {
     e.preventDefault();
     const mail = {
       email: this.state.email
@@ -57,7 +57,7 @@ class Signup extends React.Component {
       }
     });
   }
-
+*/
   render() {
     return (
       <Layout>
@@ -143,10 +143,10 @@ class Signup extends React.Component {
                 </div>
                 <button
                   type="submit"
-                  className="btn btn-primary"
-                  name="email"
+                  className="checkbtn"
+                  /*name="email"
                   value={this.state.email}
-                  handleSubmit={this.handleSubmit}
+                  handleSubmit={this.handleSubmit}*/
                 >
                   인증하기
                 </button>
@@ -223,11 +223,13 @@ class Signup extends React.Component {
                   </label>
                 </div>
 
-                <button type="submit" id="signub" className="btn btn-primary">
+                <button type="submit" className="signupbtn">
                   Sign up
                 </button>
                 <div>
-                  이미 계정이 있습니까? <a href="#">로그인</a>
+                  <p>
+                    이미 계정이 있습니까? <a href="#">로그인</a>
+                  </p>
                 </div>
               </div>
             </form>

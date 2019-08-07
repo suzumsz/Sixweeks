@@ -2,6 +2,7 @@
   .body {
     margin-top: 50px;
     margin-left: 150px;
+    height: 1000px;
   }
   .body-title {
     padding: 30px;
@@ -10,10 +11,12 @@
   .body-QA {
     padding: 20px;
     padding-left: 0px;
-    border-bottom: 1px solid blue;
+    border-bottom: 1px solid #0d4f9b;
+    margin-left: 30px;
   }
+
   .body-table {
-    margin-left: 10px;
+    margin-left: 50px;
   }
   .board-name {
     margin-left: 20px;
@@ -48,6 +51,7 @@
   .HomeButton {
     float: left;
     width: 155px;
+    margin-left: 30px;
   }
   .WriteButton {
     float: right;

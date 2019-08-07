@@ -1,39 +1,40 @@
 .body {
-  margin-top: 50px;
+  margin-top: 80px;
   margin-left: 150px;
-  height: 900px;
-}
-.body-title {
-  padding: 30px;
-  padding-left: 0px;
-}
-.board_box {
-  width: 1080px;
-  height: 695px;
-  border: solid 1px #0d4f9b;
-  margin-top: 50px;
-}
-.write {
-  border-bottom: solid 2.5px #0d4f9b;
-  width: 65px;
-  margin-top: 100px;
-  margin-left: 100px;
-  margin-bottom: 50px;
-}
-.input {
-  width: 770px;
-  height: 40px;
-  margin-left: 100px;
-  margin-bottom: 20px;
-}
-.opinibtn {
-  width: 155px;
-  height: 35px;
-  margin-top: 20px;
-}
-#btn1 {
-  margin-left: 100px;
-}
-#btn2 {
-  margin-left: 450px;
+  height: 1000px;
+
+  .body-title {
+    padding: 30px;
+    padding-left: 0px;
+  }
+  .board_box {
+    width: 1080px;
+    height: 695px;
+    border: solid 1px #0d4f9b;
+    margin-top: 50px;
+  }
+  .write {
+    border-bottom: solid 2px #0d4f9b;
+    width: 75px;
+    margin-top: 100px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+  }
+  .input {
+    width: 770px;
+    height: 40px;
+    margin-left: 100px;
+    margin-bottom: 20px;
+  }
+  .opinibtn {
+    width: 155px;
+    height: 35px;
+    margin-top: 20px;
+  }
+  #btn1 {
+    margin-left: 100px;
+  }
+  #btn2 {
+    margin-left: 450px;
+  }
 }

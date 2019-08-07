@@ -90,13 +90,7 @@ class SSRTest extends React.Component {
       this.setState({
         statue: "success",
         data: chartData,
-        title: (
-          <div>
-            {titleComponent}
-            <div id="statusSuccess" />
-            <p className="apiSuccess"> API Works Fine</p>
-          </div>
-        )
+        title: <div>{titleComponent}</div>
       });
     } else {
       /* If Server Status Fails */
