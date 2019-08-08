@@ -20,6 +20,7 @@ $ionicons-version: "3.0.0-alpha.3" !default;
 a {
   color: #343638;
 }
+
 html,
 body {
   //background: rgba(188, 224, 253, 0.5);
@@ -38,11 +39,13 @@ body {
 }
 .navv {
   cursor: pointer;
+  height: 40px;
 }
 .sise_group {
-  width: 1130px;
+  width: 1050px;
   height: 4610px;
   text-align: center;
+  margin-left: 45px;
 }
 .sise {
   width: 65px;
@@ -185,7 +188,7 @@ body {
 .sixweeks_story {
   width: 1245px;
   height: 500px;
-  margin-top: 3980px;
+  margin-top: 4000px;
   margin-left: 140px;
   margin-bottom: 50px;
 }

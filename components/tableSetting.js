@@ -32,6 +32,7 @@ const darkTheme = {
 /* Columns Setting */
 const columns = [
   {
+    name: "코인네임",
     className: "columnsCSS",
     selector: "key",
     sortable: true,
@@ -57,16 +58,20 @@ const columns = [
     }
   },
   {
+    name: "시가",
     className: "priceName",
     selector: "Price",
     sortable: true,
     ignoreRowClick: true,
-    width: "20%"
+    width: "27%"
   },
   {
+    name: "변동률",
     selector: "FluctateRate",
     sortable: true,
     ignoreRowClick: true,
+    width: "27%",
+
     cell: row => {
       if (row.FluctateRate < 0) {
         return (
@@ -87,9 +92,10 @@ const columns = [
   },
   {
     /* KRW-USD premium */
-
+    name: "kopremium",
     selector: "premium",
     sortable: true,
+    width: "19%",
     cell: row => {
       if (row.premium < 0) {
         return (

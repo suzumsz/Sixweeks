@@ -127,12 +127,12 @@ export default class extends Page {
                       </NavLink>
                     </div>
                   </NavItem>
-                </Nav>
+                </Nav>{" "}
                 <TabContent activeTab={this.state.activeTab}>
                   <TabPane tabId="1">
                     <Row>
                       <Col sm="12">
-                        <Table borderless className="tab">
+                        {/* <Table borderless className="tab">
                           <thead>
                             <tr>
                               <th className="headNumber">이름</th>
@@ -140,10 +140,9 @@ export default class extends Page {
                               <th className="headWriter">변동률%</th>
                               <th className="headDate">거래량</th>
                             </tr>
-                          </thead>
-                        </Table>
+                          </thead>{" "}
+                        </Table>*/}
                         <SSRTEST />
-                        <Table borderless />
                       </Col>
                     </Row>
                   </TabPane>
