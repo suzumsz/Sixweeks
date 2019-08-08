@@ -110,7 +110,9 @@ class SSRTest extends React.Component {
   render() {
     const { data, title } = this.state;
     // console.log(data);
-    return <DataTable title={title} columns={columns} data={data} responsive={true} />;
+    return (
+      <DataTable id="datatable" title={title} columns={columns} data={data} responsive={true} />
+    );
   }
 }
 
