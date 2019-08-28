@@ -84,12 +84,8 @@ export default class extends Page {
           </div>
 
           <div className="squ-box">
-            <div className="sq-box">
-              <h5>비트코인</h5>
-            </div>
-            <div className="sq-box">
-              <h5>비트코인</h5>
-            </div>
+            <div className="sq-box"></div>
+            <div className="sq-box"></div>
             <div className="sq-box">
               <h5>비트코인</h5>
             </div>
