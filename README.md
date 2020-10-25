@@ -14,9 +14,9 @@
     - js 라이브러리인 ReactJS를 사용
     - Bootstrap 사용   
 2. 디자인
-    - Photoshop
-    - illustrator
-    - XD
+    - Adobe Photoshop 사용하여 어플리케이션 초기 레이아웃 디자인
+    - Adobe illustrator 사용하여 로고 디자인
+    - Adobe XD 사용하여 어플리케이션 전체 디자인
 
 ### 실행  
 ```
