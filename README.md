@@ -1,6 +1,6 @@
 # SIXWEEKS
 ## 실시간으로 가상 화폐 시세를 받아오는 웹 💸
-> 연합인포맥스 인턴 기간동안 진행한 프로젝트
+> 2019 연합인포맥스 인턴
 
 ```
 
@@ -11,8 +11,8 @@
 ```
 
 ## TEAM (Developer) 👩🏻‍💻👨🏻‍💻
-- 김수정 - [suzumsz](https://github.com/suzumsz)  
-- 강동휘 - [kangdonghwi](https://github.com/kangdonghwi)  
+- 김수정 (디자이너/프론트엔드) - [suzumsz](https://github.com/suzumsz)  
+- 강동휘 (백엔드) - [kangdonghwi](https://github.com/kangdonghwi)  
 
 ## 기능소개 
 |  담당자  |   기능설명   |   구현여부   |                              
