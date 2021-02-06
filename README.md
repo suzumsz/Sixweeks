@@ -17,7 +17,7 @@
 ## 기능소개 
 |  담당자  |   기능설명   |   구현여부   |                              
 | :----------: | :----------------: | :----------: |
-|김수정| Adobe Photoshop 사용하여 어플리케이션 초기 레이아웃 디자인, Adobe illustrator 사용하여 로고 디자인, Adobe XD 사용하여 어플리케이션 전체 디자인, Bootstrap을 사용하여 전체적인 코딩 | ✔ |
+|김수정| Adobe Photoshop 사용하여 어플리케이션 초기 레이아웃 디자인, Adobe illustrator 사용하여 로고 디자인, Adobe XD 사용하여 어플리케이션 전체 디자인, Bootstrap을 사용하여 전체화면 코딩 | ✔ |
 |강동휘| nodeJS를 사용하여 서버관리, mysql로 DB관리, Sequelize를 사용하여 로그인/회원가입/게시판 API 구현, AWS ec2,rds를 사용하여 배포 | ✔ |
 
 ## 개발환경
