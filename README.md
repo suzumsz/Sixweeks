@@ -12,7 +12,7 @@
 
 ## TEAM (Developer) 👩🏻‍💻👨🏻‍💻
 - 김수정 - [suzumsz](https://github.com/suzumsz)  
-- 강동휘 - [hhyewon](https://github.com/hhyewon)  
+- 강동휘 - [kangdonghwi](https://github.com/kangdonghwi)  
 
 ## 기능소개 
 |  담당자  |   기능설명   |   구현여부   |                              
