@@ -27,6 +27,9 @@
 <img src="https://img.shields.io/badge/Node.js-339933?logo=Node.js&logoColor=white"> <img src="https://img.shields.io/badge/MySQL-4479A1?logo=MySQL&logoColor=white"> <img src="https://img.shields.io/badge/Next.js-000000?logo=Next.js&logoColor=white"> <img src="https://img.shields.io/badge/React-61DAFB?logo=React&logoColor=white">   
 <img src="https://img.shields.io/badge/Bootstrap-7952B3?logo=Bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/Photoshop-31A8FF?logo=Adobe-Photoshop&logoColor=white"> <img src="https://img.shields.io/badge/Illustrator-FF9A00?logo=Adobe-Illustrator&logoColor=white"> <img src="https://img.shields.io/badge/XD-FF61F6?logo=Adobe-XD&logoColor=white">
 
+## 참고
+- [디자인 레이아웃 동영상](./etc/디자인레이아웃.mp4) 참고
+
 <details>
 <summary> 실행 </summary>
 <div markdown="1">
