@@ -13,7 +13,7 @@
 
 ```
 
-## TEAM (Developer) 👩🏻‍💻👨🏻‍💻
+## TEAM 👩🏻‍💻👨🏻‍💻
 - 김수정 (디자이너/프론트엔드) - [suzumsz](https://github.com/suzumsz)  
 - 강동휘 (백엔드) - [kangdonghwi](https://github.com/kangdonghwi)  
 
